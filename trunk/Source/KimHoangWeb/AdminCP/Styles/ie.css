@@ -1,0 +1,17 @@
+﻿/* ----- @@@[ FIX PNG TRANSPARENT ]@@@ ----- */
+* html .png {
+position:relative;
+behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "../media/images/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='scale')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+);
+}
+
+li {height:1%}
+
+/* ----- @@@[COMMON]@@@ ----- */
+.checkbox {vertical-align: -1px; overflow: hidden; height:14px;}
+* html #content {width:expression(Math.max((document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth) - 0, 980)+'px');}
+#main_content .content_inner {height:367px;}

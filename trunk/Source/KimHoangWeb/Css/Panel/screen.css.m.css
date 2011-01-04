@@ -1,0 +1,427 @@
+a
+{
+	border: 0;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #D91861;
+}
+#header
+{
+	background: #cbcbcb url(../../Img/Panel/header.png?v=490) no-repeat center top;
+}
+#header a:hover
+{
+	color: #D91861;
+}
+#pageTitle
+{
+	font-family: Arial,sans-serif;
+	color: #666;
+}
+#divTabsOuter
+{
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+#divTabs ul li, #divTabs ul li.selected
+{
+	border: 0;
+	padding: 0 5px 0 0;
+	margin: 0 0 0 5px;
+	color: #666;
+	background: transparent url(../../Img/Panel/tabs.png?v=490) no-repeat right -96px;
+}
+* html #divTabs ul li, * html #divTabs ul li.selected
+{
+	background-position: right -96px;
+}
+#divTabs ul li .innerTab
+{
+	background: transparent url(../../Img/Panel/tabs.png?v=490) no-repeat left -64px;
+	display: block;
+	padding: 4px 8px 5px 8px;
+}
+#divTabs ul li img.icon
+{
+	margin: 3px 3px -4px 0;
+}
+#divTabs ul li img.actions-tab-options
+{
+	margin-left: 3px;
+}
+#divTabs ul li.selected
+{
+	background: transparent url(../../Img/Panel/tabs.png?v=490) no-repeat right -32px;
+	color: #111;
+	padding: 0 5px 1px 0;
+	margin-bottom: -1px;
+}
+* html #divTabs ul li.selected
+{
+	background-position: right -32px;
+}
+#divTabs ul li.selected .innerTab
+{
+	background: transparent url(../../Img/Panel/tabs.png?v=490) no-repeat left 0;
+	padding: 4px 5px 6px 8px;
+	margin-bottom: -1px;
+}
+#divTabs ul li.dndTarget
+{
+	outline: 1px dashed #333;
+}
+#divTabs .unread
+{
+	color: #D91861;
+}
+#maintable
+{
+	padding: 0 9px;
+}
+.gripper
+{
+	background: transparent;
+}
+.resizable .module, .resizable .moduleEdit
+{
+	    margin:4px 3px 5px 0px;
+   
+}
+.module, .moduleEdit
+{
+	background: transparent;
+	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	border: 0;
+	border-bottom: 1px solid #AAA;
+}
+body #application .kbdFocus
+{
+	-moz-box-shadow: 0 7px 14px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 7px 14px rgba(0,0,0,0.5);
+	box-shadow: 0 7px 14px rgba(0,0,0,0.5);
+	border: 0;
+	outline: 1px solid #666;
+}
+#moduleGhost
+{
+	border: 1px dashed #333;
+}
+.borderless-module
+{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.moduleFrame, .moduleEdit .moduleFrame
+{
+	border: 0;
+	background: transparent;
+}
+.moduleHeaderContainer
+{
+	background: transparent url(../../../../Img/Panel/Panel/widgets.png?v=490) no-repeat right -50px;
+	padding: 0 4px 0 0;
+}
+.moduleHeader
+{
+	background: transparent url(../../../../Img/Panel/Panel/widgets.png?v=490) no-repeat left 0;
+	color: #666;
+	padding: 4px 0;
+}
+.moduleHeader .title, .moduleHeader .title a
+{
+	color: inherit;
+	text-shadow: 1px 1px 0 #EEE;
+}
+.moduleHeader .title a:hover
+{
+	color: #111;
+	text-decoration: underline;
+}
+.moduleContent
+{
+	border: 1px solid #AAA;
+	border-top: 0;
+	border-bottom: 0;
+}
+.moduleIframe .moduleContent
+{
+	border: 0;
+}
+.actions-window-close, .actions-view-refresh, .actions-view-options, .actions-view-sendModule, img.actions-view-editModule, img.actions-view-shareModule, .actions-window-collapse, .actions-window-expand, .actions-tab-options
+{
+	background-image: url(../../Img/Panel/actions.png?v=490);
+}
+.moduleHeader .share a, .moduleHeader a.share, .moduleHeader .edit a, .moduleHeader a.edit
+{
+	color: #666;
+}
+.moduleHeader .share a:hover, .moduleHeader a.share:hover, .moduleHeader .edit a:hover, .moduleHeader a.edit:hover
+{
+	color: #111;
+}
+.postItcolorSelection .white
+{
+	background-color: #ccc;
+}
+.blue-module
+{
+	border-color: #93b8c8;
+}
+.postItcolorSelection .blue
+{
+	background-color: #b1d8ed;
+}
+.blue-module .moduleHeaderContainer
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat right -150px;
+}
+.blue-module .moduleHeader
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat left -100px;
+}
+.blue-module .moduleHeader .title
+{
+	color: #256281;
+	text-shadow: 1px 1px 0 #e1f2fa;
+}
+.blue-module .moduleContent
+{
+	border-color: #93b8c8;
+}
+.blue-module .actions-window-close, .blue-module .actions-view-refresh, .blue-module .actions-view-options, .blue-module .actions-view-sendModule, .blue-module img.actions-view-editModule, .blue-module img.actions-view-shareModule, .blue-module .showHide img
+{
+	background-image: url(../../Img/Panel/actions-blue.png?v=490);
+}
+.blue-module .moduleHeader .share a, .blue-module .moduleHeader a.share, .blue-module .moduleHeader .edit a, .blue-module .moduleHeader a.edit
+{
+	color: #256281;
+}
+.green-module
+{
+	border-color: #a9ca7e;
+}
+.postItcolorSelection .green
+{
+	background-color: #d0eaad;
+}
+.green-module .moduleHeaderContainer
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat right -250px;
+}
+.green-module .moduleHeader
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat left -200px;
+}
+.green-module .moduleHeader .title
+{
+	color: #5a8226;
+	text-shadow: 1px 1px 0 #effae1;
+}
+.green-module .moduleContent
+{
+	border-color: #a9ca7e;
+}
+.green-module .actions-window-close, .green-module .actions-view-refresh, .green-module .actions-view-options, .green-module .actions-view-sendModule, .green-module img.actions-view-editModule, .green-module img.actions-view-shareModule, .green-module .showHide img
+{
+	background-image: url(../../Img/Panel/actions-green.png?v=490);
+}
+.green-module .moduleHeader .share a, .green-module .moduleHeader a.share, .green-module .moduleHeader .edit a, .green-module .moduleHeader a.edit
+{
+	color: #5a8226;
+}
+.red-module
+{
+	border-color: #cc98b5;
+}
+.postItcolorSelection .red
+{
+	background-color: #edb6d6;
+}
+.red-module .moduleHeaderContainer
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat right -350px;
+}
+.red-module .moduleHeader
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat left -300px;
+}
+.red-module .moduleHeader .title
+{
+	color: #82265a;
+	text-shadow: 1px 1px 0 #fae1ef;
+}
+.red-module .moduleContent
+{
+	border-color: #cc98b5;
+}
+.red-module .actions-window-close, .red-module .actions-view-refresh, .red-module .actions-view-options, .red-module .actions-view-sendModule, .red-module img.actions-view-editModule, .red-module img.actions-view-shareModule, .red-module .showHide img
+{
+	background-image: url(../../Img/Panel/actions-red.png?v=490);
+}
+.red-module .moduleHeader .share a, .red-module .moduleHeader a.share, .red-module .moduleHeader .edit a, .red-module .moduleHeader a.edit
+{
+	color: #82265a;
+}
+#playermp3Container .actions-window-close
+{
+	background: url("../base/../../Img/Panel/icons/actions.png?v=1") repeat scroll 0 0 transparent;
+	width: 16px;
+}
+.yellow-module
+{
+	border-color: #ccbf99;
+}
+.postItcolorSelection .yellow
+{
+	background-color: #ede0b7;
+}
+.yellow-module .moduleHeaderContainer
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat right -450px;
+}
+.yellow-module .moduleHeader
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat left -400px;
+}
+.yellow-module .moduleHeader .title
+{
+	color: #826b26;
+	text-shadow: 1px 1px 0 #faf4e2;
+}
+.yellow-module .moduleContent
+{
+	border-color: #ccbf99;
+}
+.yellow-module .actions-window-close, .yellow-module .actions-view-refresh, .yellow-module .actions-view-options, .yellow-module .actions-view-sendModule, .yellow-module img.actions-view-editModule, .yellow-module img.actions-view-shareModule, .yellow-module .showHide img
+{
+	background-image: url(../../Img/Panel/actions-yellow.png?v=490);
+}
+.yellow-module .moduleHeader .share a, .yellow-module .moduleHeader a.share, .yellow-module .moduleHeader .edit a, .yellow-module .moduleHeader a.edit
+{
+	color: #826b26;
+}
+.orange-module
+{
+	border-color: #b9c;
+}
+.postItcolorSelection .orange
+{
+	background-color: #dbb7ed;
+}
+.orange-module .moduleHeaderContainer
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat right -550px;
+}
+.orange-module .moduleHeader
+{
+	background: transparent url(../../Img/Panel/widgets.png?v=490) no-repeat left -500px;
+}
+.orange-module .moduleHeader .title
+{
+	color: #632682;
+	text-shadow: 1px 1px 0 #f2e2fa;
+}
+.orange-module .moduleContent
+{
+	border-color: #b9c;
+}
+.orange-module .actions-window-close, .orange-module .actions-view-refresh, .orange-module .actions-view-options, .orange-module .actions-view-sendModule, .orange-module img.actions-view-editModule, .orange-module img.actions-view-shareModule, .orange-module .showHide img
+{
+	background-image: url(../../Img/Panel/actions-orange.png?v=490);
+}
+.orange-module .moduleHeader .share a, .orange-module .moduleHeader a.share, .orange-module .moduleHeader .edit a, .orange-module .moduleHeader a.edit
+{
+	color: #632682;
+}
+.editContent
+{
+	background: #EEE url(../../Img/Panel/editcontent.png?v=490) repeat-x center top;
+	border: 1px solid #AAA;
+	margin: 0;
+}
+.nv-pager a.prev, .nv-pager a.next
+{
+	background: transparent url(../../Img/Panel/actions.png?v=490) no-repeat;
+}
+.nv-pager a.prev
+{
+	background-position: left -353px;
+}
+.nv-pager a.next
+{
+	background-position: right -322px;
+}
+.rtl .nv-pager a.prev
+{
+	background: transparent url(../../Img/Panel/actions.png?v=490) no-repeat;
+	background-position: right -322px;
+}
+.rtl .nv-pager a.next
+{
+	background: transparent url(../../Img/Panel/actions.png?v=490) no-repeat;
+	background-position: left -353px;
+}
+.even, .rtl .even
+{
+	background-color: #F3F3F3;
+}
+.nv-thumbnailedList .item, .nv-richList .item, .nv-productList .item
+{
+	border: 0;
+}
+.nv-thumbnailedList .item h3, .nv-thumbnailedList .item h3 a, .nv-richList .item h3, .nv-richList .item h3 a, .nv-productList .price
+{
+	color: #082E2A;
+}
+.nv-thumbnailedList .read, .nv-thumbnailedList .read h3, .nv-thumbnailedList .read h3 a
+{
+	color: #999;
+}
+ul.nv-tabList li
+{
+	color: #666;
+}
+ul.nv-tabList li a
+{
+	border-color: #D6DCDC;
+	background: #eee url(../../Img/Panel/core-tabs.png?v=490) repeat-x left bottom;
+}
+ul.nv-tabList li.dropped a, ul.nv-tabList li.dropped a:hover, ul.nv-tabList li.selected a
+{
+	color: #000;
+	background: #FFF;
+}
+.nv-tabContent
+{
+	border: 1px solid #D6DCDC;
+}
+dl.nv-emailList dd
+{
+	border-color: #D6DCDC;
+}
+#footer
+{
+	background: #FFF;
+}
+#messageBox
+{
+	background: #666;
+	border: 0;
+}
+#messageBox .content
+{
+	background: transparent url(../../Img/Panel/wizard.png?v=490) no-repeat right center;
+}
+#NV_messageContainer .content
+{
+	background: transparent;
+}
+#messageBox .action
+{
+	background: transparent;
+}

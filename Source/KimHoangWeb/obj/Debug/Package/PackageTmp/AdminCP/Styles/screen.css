@@ -1,0 +1,36 @@
+﻿@import url("reset.css");
+@import url("common.css");
+@import url("main.css");
+@import url("additional.css");
+
+body {
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333;
+	background-color:#e1e7d5;
+}
+a {color:#0052a8; text-decoration: none; outline: none;}
+a:hover {color:#4a7100; text-decoration: underline;}
+input, select, textarea {font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif; font-size:11px; line-height:normal;}
+sup {line-height:1px; margin:0; padding:0px; vertical-align:3px}
+table {border-collapse:collapse; vertical-align:middle;}
+input, select, a {outline:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

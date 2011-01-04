@@ -1,0 +1,11 @@
+﻿.contact
+{
+        line-height: 176%;
+    }
+.contact .title
+{
+        font-size:20px;
+        font-weight:bold;
+        color:Red;
+        padding-bottom:20px;
+    }

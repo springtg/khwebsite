@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainLayout.master.cs" Inherits="Master_MainLayout" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Css/Main.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/Layout/Layout.base.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/Layout/layout-extend.css" rel="stylesheet" type="text/css" />
+    <script src="js/core/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery-ui-1.7.3.custom.min.js" type="text/javascript"></script>
+    <script src="js/plugin/jquery.layout-latest.js" type="text/javascript"></script>
+    <script src="js/main/layoutUI.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-1.4.1-vsdoc.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var outerLayout;
+        $(document).ready(function () {
+
+            outerLayout = $("body").layout();
+        });
+
+    </script>
+    <asp:ContentPlaceHolder ID="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="ui-layout-north">
+        north
+    </div>
+    <div class="ui-layout-center">
+         <div id="kh-body">
+        <div class="kh-main">
+          <%--  <div class="kh-main-cl">
+            </div>
+            <div class="kh-main-cr">
+            </div>
+            <div class="kh-main-cc">
+            </div>--%>
+            <div class="kh-main-body">
+                <div class="art-nav">
+                    <asp:ContentPlaceHolder ID="MenuContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="art-header">
+                    <asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="art-nav">
+                    <asp:ContentPlaceHolder ID="NavPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row ">
+                        <div class="art-layout-cell kh-LeftContent">
+                            <asp:ContentPlaceHolder ID="LeftContentPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="art-layout-cell  kh-CenterContent">
+                            <asp:ContentPlaceHolder ID="CenterContentPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="art-layout-cell  kh-RightContent">
+                            <asp:ContentPlaceHolder ID="RightContentPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="ui-layout-south">
+         <div class="kh-main kh_footer">
+                   <div id="imgtop" class="imgtop"></div>
+                        <div class="kh-footer-text">
+                            <p>
+                                Bản quyền thuộc về Công ty TNHH Kim Hoàng
+                               <br />
+                                Copyright &copy; 2010 ---. All Rights Reserved.</p>
+                        </div>
+                   
+                </div>
+        </div>
+        <div class="ui-layout-west">
+            west
+        </div>
+        <div class="ui-layout-east">
+            east
+        </div>
+</body>
+</html>

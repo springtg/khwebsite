@@ -1,0 +1,123 @@
+﻿.acp_nav {background: url(../graphics/nav_bg2.gif) repeat-x top; height:30px;}
+.RadMenu_IjobAdmin  {height: 26px; background: url(../graphics/nav_bg2.gif) repeat-x top;}
+/* ---------------------------<Root items>------------------------------ */
+.RadMenu_IjobAdmin .rmLink {
+	font: normal 12px/25px "Arial", sans-serif;
+	color: #517307;
+	text-decoration: none;
+	font-weight: bold;
+   cursor: pointer;
+	display:block;
+   border-left:1px solid #FFFFD2;
+	border-right:1px solid #A4CF47;
+}
+.RadMenu_IjobAdmin .rmLink:hover,
+.RadMenu_IjobAdmin .rmExpanded,
+.RadMenu_IjobAdmin .rmFocus,
+.RadMenu_IjobAdmin .rmSelected {
+	background: #67920d url(../graphics/nav_tab_hover.gif) repeat-x top;
+   color: #FFF;
+}
+.RadMenu_IjobAdmin .rmFirst .rmLink {border-left:none}
+.RadMenu_IjobAdmin .rmLast .rmLink {border-right:none}
+.RadMenu_IjobAdmin .rmLink:hover .rmText,
+.RadMenu_IjobAdmin .rmExpanded .rmText,
+.RadMenu_IjobAdmin .rmExpanded:hover .rmText,
+.RadMenu_IjobAdmin .rmSelected .rmText,
+.RadMenu_IjobAdmin .rmSelected:hover .rmText,
+.RadMenu_IjobAdmin .rmExpandDown .rmText
+.RadMenu_IjobAdmin .rmExpandDown:hover .rmText {
+   cursor: pointer;
+	display:block;
+}
+.RadMenu_IjobAdmin .rmDisabled,.RadMenu_IjobAdmin .rmDisabled:hover{color:#7d7d7d;}
+/* </Root items> */
+
+/* ---------------------<Submenu items>---------------------- */
+.RadMenu_IjobAdmin .rmVertical .rmSlide, .RadMenu_IjobAdmin .rmSlide .rmSlide, .RadMenu_IjobAdmin_Context .rmGroup .rmSlide {margin: -2px 0 }
+.RadMenu_IjobAdmin .rmGroup {background-color: #E2F3BE; border:2px solid #67920D;}
+/* Normal */
+.RadMenu_IjobAdmin .rmGroup .rmItem .rmLink {
+	display: block;
+	cursor: pointer;
+	font: normal 11px/20px "Arial", sans-serif;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #A4CF47;
+	border-top: 1px solid #FFFFD2;
+}
+/* Hover */
+.RadMenu_IjobAdmin .rmGroup .rmItem .rmLink:hover,
+.RadMenu_IjobAdmin .rmGroup .rmItem .rmFocused,
+.RadMenu_IjobAdmin .rmGroup .rmItem .rmExpanded,
+.RadMenu_IjobAdmin .rmGroup .rmItem .rmSelected {
+   background: #bed789;
+	color:#517307;
+   border-bottom-color:#95c35e;
+	border-top-color:#b1d384
+}
+/* Top & Bottom items have no top border & bottom border */
+.RadMenu_IjobAdmin .rmGroup .rmFirst .rmLink, .RadMenu_IjobAdmin .rmGroup .rmFirst .rmLink:hover {border-top:none;}
+.RadMenu_IjobAdmin .rmGroup .rmLast .rmLink, .RadMenu_IjobAdmin .rmGroup .rmLast .rmLink:hover {border-bottom:none;}
+
+/* ------------------------------------------------------------------------------ */
+.RadMenu_IjobAdmin .rmGroup .rmLink, .RadMenu_IjobAdmin .rmGroup .rmText, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled:hover, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled .rmText, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled:hover .rmText {}
+
+.RadMenu_IjobAdmin .rmLeftArrow,.RadMenu_IjobAdmin .rmRightArrow{background-color:#4f4f4f;}
+.RadMenu_IjobAdmin .rmLeftArrow{border-right:1px solid #828282;}
+.RadMenu_IjobAdmin .rmRightArrow{border-left:1px solid #828282;}
+
+.RadMenu_IjobAdmin .rmTopArrow,
+.RadMenu_IjobAdmin .rmBottomArrow,
+.RadMenu_IjobAdmin .rmGroup .rmLeftArrow,
+.RadMenu_IjobAdmin .rmGroup .rmRightArrow {background-color: #4f4f4f;}
+
+.RadMenu_IjobAdmin .rmTopArrow{border-bottom:1px solid #828282;}
+.RadMenu_IjobAdmin .rmBottomArrow{border-top:1px solid #828282;}
+
+
+
+/* PHAN KHONG CAN THIET ------------------------------------------------------------------------------------------------------------- */
+/*.RadMenu_IjobAdmin .rmHorizontal .rmSeparator .rmText, .RadMenu_IjobAdmin .rmVertical .rmHorizontal .rmSeparator .rmText {
+	height: 22px;
+	margin: 1px 0 0;
+	width: 1px;
+	background-color: #000;
+}
+
+.RadMenu_IjobAdmin_Context .rmSeparator .rmText, .RadMenu_IjobAdmin .rmHorizontal .rmGroup .rmSeparator .rmText, .RadMenu_IjobAdmin .rmVertical .rmHorizontal .rmGroup .rmSeparator .rmText {
+} */
+/* </Separators> */
+/* </RadMenu / Black> */
+/* <expand arrows>*/
+.RadMenu_IjobAdmin .rmGroup .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmExpandDown, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled .rmExpandDown, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled:hover .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmItem .rmDisabled:hover .rmExpandDown {}
+
+.RadMenu_IjobAdmin .rmGroup .rmLink:hover .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmFocused .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmSelected .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmExpanded .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmLink:hover .rmExpandDown, .RadMenu_IjobAdmin .rmGroup .rmFocused .rmExpandDown, .RadMenu_IjobAdmin .rmGroup .rmSelected .rmExpandDown, .RadMenu_IjobAdmin .rmGroup .rmExpanded .rmExpandDown {}
+
+.RadMenu_IjobAdmin .rmGroup .rmDisabled:hover .rmExpandRight, .RadMenu_IjobAdmin .rmGroup .rmDisabled:hover .rmExpandDown {}
+
+/* </expand arrows> */
+/* <rtl> */
+/*
+.RadMenu_IjobAdmin_rtl .rmVertical .rmExpanded .rmText, .RadMenu_IjobAdmin_rtl .rmVertical .rmExpanded:hover .rmText {
+}
+
+.RadMenu_IjobAdmin_rtl .rmGroup .rmLink:hover, .RadMenu_IjobAdmin_rtl .rmGroup .rmFocused, .RadMenu_IjobAdmin_rtl .rmGroup .rmSelected, .RadMenu_IjobAdmin_rtl .rmGroup .rmExpanded {
+}
+
+.RadMenu_IjobAdmin_rtl .rmGroup .rmLink:hover .rmText, .RadMenu_IjobAdmin_rtl .rmGroup .rmFocused .rmText, .RadMenu_IjobAdmin_rtl .rmGroup .rmSelected .rmText, .RadMenu_IjobAdmin_rtl .rmGroup .rmExpanded .rmText {
+}
+
+.RadMenu_IjobAdmin_rtl .rmGroup .rmExpandLeft {
+}
+
+.RadMenu_IjobAdmin_rtl .rmGroup .rmLink:hover .rmExpandLeft, .RadMenu_IjobAdmin_rtl .rmGroup .rmFocused .rmExpandLeft, .RadMenu_IjobAdmin_rtl .rmGroup .rmSelected .rmExpandLeft, .RadMenu_IjobAdmin_rtl .rmGroup .rmExpanded .rmExpandLeft {
+}
+*/
+/* </rtl> */
+/* </Submenu items> */
+/* <Submenu offsets (Black - specific, overlapping submenus)> */
+
+
+/* </Submenu offsets> */
+/* <Scrolling arrows> */

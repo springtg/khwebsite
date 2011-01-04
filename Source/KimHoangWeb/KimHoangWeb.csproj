@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1948A48A-6F24-4BCF-9CFA-917D4D222223}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KimHoangWeb</RootNamespace>
+    <AssemblyName>KimHoangWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Layout\layout-default.css" />
+    <Content Include="Css\Layout\layout-extend.css" />
+    <Content Include="Css\Layout\Layout.base.css" />
+    <Content Include="Css\Main.css" />
+    <Content Include="Css\Menu.css" />
+    <Content Include="Css\Panel\screen.css" />
+    <Content Include="Css\Panel\screen.css.m.css" />
+    <Content Include="Css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Css\redmond\jquery-ui-1.8.6.custom.css" />
+    <Content Include="Css\SubMain.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="Img\01.png" />
+    <Content Include="Img\02.png" />
+    <Content Include="Img\03.png" />
+    <Content Include="Img\bg-search.jpg" />
+    <Content Include="Img\blockcontentbullets.png" />
+    <Content Include="Img\blockheader.png" />
+    <Content Include="Img\bt_bg.gif" />
+    <Content Include="Img\bt_l.gif" />
+    <Content Include="Img\bt_r.gif" />
+    <Content Include="Img\button.png" />
+    <Content Include="Img\contact.jpg" />
+    <Content Include="Img\flash.swf" />
+    <Content Include="Img\Flash\banner.swf" />
+    <Content Include="Img\footer_b.png" />
+    <Content Include="Img\footer_s.png" />
+    <Content Include="Img\footer_t.png" />
+    <Content Include="Img\header.jpg" />
+    <Content Include="Img\host.png" />
+    <Content Include="Img\hosting.png" />
+    <Content Include="Img\hosting2.png" />
+    <Content Include="Img\Layout\resizable-e.gif" />
+    <Content Include="Img\Layout\resizable-n.gif" />
+    <Content Include="Img\Layout\resizable-s.gif" />
+    <Content Include="Img\Layout\resizable-w.gif" />
+    <Content Include="Img\Layout\toggle-dn.gif" />
+    <Content Include="Img\Layout\toggle-lt.gif" />
+    <Content Include="Img\Layout\toggle-rt.gif" />
+    <Content Include="Img\Layout\toggle-up.gif" />
+    <Content Include="Img\link photo.txt" />
+    <Content Include="Img\logo.png" />
+    <Content Include="Img\menuitem.png" />
+    <Content Include="Img\menuitem2.png" />
+    <Content Include="Img\menuseparator.png" />
+    <Content Include="Img\nav.png" />
+    <Content Include="Img\page_gl.png" />
+    <Content Include="Img\page_t.jpg" />
+    <Content Include="Img\Panel\actions-blue.png" />
+    <Content Include="Img\Panel\actions-green.png" />
+    <Content Include="Img\Panel\actions-orange.png" />
+    <Content Include="Img\Panel\actions-red.png" />
+    <Content Include="Img\Panel\actions-yellow.png" />
+    <Content Include="Img\Panel\actions.png" />
+    <Content Include="Img\Panel\favIcon.php.png" />
+    <Content Include="Img\Panel\s.gif" />
+    <Content Include="Img\Panel\widgets.png" />
+    <Content Include="Img\postbullets.png" />
+    <Content Include="Img\postquote.png" />
+    <Content Include="Img\rssicon.png" />
+    <Content Include="Img\sheet_h.png" />
+    <Content Include="Img\sheet_s.png" />
+    <Content Include="Img\sheet_v.png" />
+    <Content Include="Img\spacer.gif" />
+    <Content Include="Img\subitem.png" />
+    <Content Include="Img\thiep.png" />
+    <Content Include="Img\TuVan.png" />
+    <Content Include="Img\tv.png" />
+    <Content Include="Img\under-construction.gif" />
+    <Content Include="Img\United.png" />
+    <Content Include="Img\Vietnam.png" />
+    <Content Include="Img\vmenu.png" />
+    <Content Include="Img\vmenublockheader.png" />
+    <Content Include="Img\vmenublock_h.png" />
+    <Content Include="Img\vmenublock_s.png" />
+    <Content Include="Img\vmenublock_v.png" />
+    <Content Include="Img\vmenuitem.png" />
+    <Content Include="Img\VS.png" />
+    <Content Include="Img\vsubitem.gif" />
+    <Content Include="Img\web.png" />
+    <Content Include="js\cloud-carousel.1.0.4.min.js" />
+    <Content Include="js\core\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-ui-1.8.6.custom.min.js" />
+    <Content Include="js\jquery.mousewheel.js" />
+    <Content Include="js\main\layoutUI.js" />
+    <Content Include="js\plugin\cloud\swfobject.js" />
+    <Content Include="js\plugin\cloud\tagcloud.swf" />
+    <Content Include="js\plugin\jquery-ui-1.7.3.custom.min.js" />
+    <Content Include="js\plugin\jquery.formatter.js" />
+    <Content Include="js\plugin\jquery.layout-latest.js" />
+    <Content Include="Mods\About\Css\About.css" />
+    <Content Include="Mods\About\_About.aspx" />
+    <Content Include="Mods\Contact\Css\Contact.css" />
+    <Content Include="Mods\Contact\_Contact.aspx" />
+    <Content Include="Mods\Customer\_Customer.aspx" />
+    <Content Include="Mods\Job\_Job.aspx" />
+    <Content Include="Mods\Main\Address.ascx" />
+    <Content Include="Mods\Main\Css\Main.css" />
+    <Content Include="Mods\Main\JS\Main.js" />
+    <Content Include="Mods\Main\Main.aspx" />
+    <Content Include="Mods\Main\ucCloud.ascx" />
+    <Content Include="Mods\Main\ucCompanyInfo.ascx" />
+    <Content Include="Mods\Main\ucFlash.ascx" />
+    <Content Include="Mods\Main\ucLinkSite.ascx" />
+    <Content Include="Mods\Main\ucNavigate.ascx" />
+    <Content Include="Mods\Main\ucOnline.ascx" />
+    <Content Include="Mods\Main\ucRate.ascx" />
+    <Content Include="Mods\Main\ucSupport.ascx" />
+    <Content Include="Mods\Main\ucTopMenu.ascx" />
+    <Content Include="Mods\News\_News.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ContentMain.Master.cs">
+      <DependentUpon>ContentMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\ContentMain.Master.designer.cs">
+      <DependentUpon>ContentMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MainLayout.master.cs">
+      <DependentUpon>MainLayout.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\About\_About.aspx.cs">
+      <DependentUpon>_About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\About\_About.aspx.designer.cs">
+      <DependentUpon>_About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Contact\_Contact.aspx.cs">
+      <DependentUpon>_Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Contact\_Contact.aspx.designer.cs">
+      <DependentUpon>_Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Customer\_Customer.aspx.cs">
+      <DependentUpon>_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Customer\_Customer.aspx.designer.cs">
+      <DependentUpon>_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Job\_Job.aspx.cs">
+      <DependentUpon>_Job.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Job\_Job.aspx.designer.cs">
+      <DependentUpon>_Job.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\Address.ascx.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\Class\TopMenuUI.cs" />
+    <Compile Include="Mods\Main\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\ucCloud.ascx.cs">
+      <DependentUpon>ucCloud.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucCompanyInfo.ascx.cs">
+      <DependentUpon>ucCompanyInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucFlash.ascx.cs">
+      <DependentUpon>ucFlash.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucLinkSite.ascx.cs">
+      <DependentUpon>ucLinkSite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucLinkSite.ascx.designer.cs">
+      <DependentUpon>ucLinkSite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\ucNavigate.ascx.cs">
+      <DependentUpon>ucNavigate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucOnline.ascx.cs">
+      <DependentUpon>ucOnline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucOnline.ascx.designer.cs">
+      <DependentUpon>ucOnline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\ucRate.ascx.cs">
+      <DependentUpon>ucRate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucRate.ascx.designer.cs">
+      <DependentUpon>ucRate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\ucSupport.ascx.cs">
+      <DependentUpon>ucSupport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucSupport.ascx.designer.cs">
+      <DependentUpon>ucSupport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\ucTopMenu.ascx.cs">
+      <DependentUpon>ucTopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucTopMenu.ascx.designer.cs">
+      <DependentUpon>ucTopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\News\_News.aspx.cs">
+      <DependentUpon>_News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Main.master" />
+    <Content Include="Master\MainLayout.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KimHoangDAO\KimHoangDAO.csproj">
+      <Project>{0A618242-5E2D-4ACD-85AC-4A466EFDD5C1}</Project>
+      <Name>KimHoangDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KimHoangOBJ\KimHoangOBJ.csproj">
+      <Project>{0B691B53-D37D-466A-A7F8-8C55712A9580}</Project>
+      <Name>KimHoangOBJ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\ContentMain.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21563</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

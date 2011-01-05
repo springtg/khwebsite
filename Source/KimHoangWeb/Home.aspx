@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Main.master" AutoEventWireup="true"
-    CodeFile="Home.aspx.cs" Inherits="index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Main.master" AutoEventWireup="true" Inherits="index" Codebehind="Home.aspx.cs" %>
 
 <%@ Register Src="~/Mods/Main/ucTopMenu.ascx" TagName="TopMenu" TagPrefix="kimhoang" %>
 <%@ Register Src="~/Mods/Main/Address.ascx" TagName="Address" TagPrefix="kimhoang" %>

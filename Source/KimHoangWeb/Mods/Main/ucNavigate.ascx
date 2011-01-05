@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucNavigate.ascx.cs" Inherits="Mods_Main_ucNavigate" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Mods_Main_ucNavigate" Codebehind="ucNavigate.ascx.cs" %>
 <link type="text/css" href="css/redmond/jquery-ui-1.8.6.custom.css" rel="stylesheet" />
 <link type="text/css" href="css/Main.css" rel="stylesheet" />
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>

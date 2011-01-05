@@ -1,5 +1,5 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucCompanyInfo.ascx.cs"
-    Inherits="Mods_Main_ucCompanyInfo" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true"
+    Inherits="Mods_Main_ucCompanyInfo" Codebehind="ucCompanyInfo.ascx.cs" %>
 <div style="height: 150px;">
     <object width="1018px" height="150px" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
         <param name="movie" value="../../Img/Flash/banner.swf">

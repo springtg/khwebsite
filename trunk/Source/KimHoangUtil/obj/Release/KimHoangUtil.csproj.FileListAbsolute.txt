@@ -1,5 +1,0 @@
-D:\Working\Running Project\New Source\KimHoang\Web\KimHoangUtil\bin\Release\KimHoangUtil.dll
-D:\Working\Running Project\New Source\KimHoang\Web\KimHoangUtil\bin\Release\KimHoangUtil.pdb
-D:\Working\Running Project\New Source\KimHoang\Web\KimHoangUtil\obj\Release\ResolveAssemblyReference.cache
-D:\Working\Running Project\New Source\KimHoang\Web\KimHoangUtil\obj\Release\KimHoangUtil.dll
-D:\Working\Running Project\New Source\KimHoang\Web\KimHoangUtil\obj\Release\KimHoangUtil.pdb

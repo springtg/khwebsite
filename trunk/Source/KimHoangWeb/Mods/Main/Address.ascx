@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="Address.ascx.cs" Inherits="Mods_Main_Address" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Mods_Main_Address" Codebehind="Address.ascx.cs" %>
 <script type="text/javascript">
     $(function () { //Document ready shorthand
         var $search = $('#search'); //Cache the element for faster DOM searching since we are using it more than once

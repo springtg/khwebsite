@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucCloud.ascx.cs" Inherits="Mods_Main_ucCloud" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Mods_Main_ucCloud" Codebehind="ucCloud.ascx.cs" %>
 <script src="js/plugin/cloud/swfobject.js" type="text/javascript"></script>
 <div class="widgetCloud">
 <div id="wp-cumulus" >

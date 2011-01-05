@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucFlash.ascx.cs" Inherits="Mods_Main_ucFlash" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="Mods_Main_ucFlash" Codebehind="ucFlash.ascx.cs" %>
 
 <div style="height: 100px;">
     <object width="1018px" height="150px" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">

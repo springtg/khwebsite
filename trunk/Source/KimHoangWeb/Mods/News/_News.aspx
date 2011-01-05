@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="_News.aspx.cs" Inherits="Mods_News_News" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Mods_News_News" Codebehind="_News.aspx.cs" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

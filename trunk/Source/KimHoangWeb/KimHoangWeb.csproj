@@ -23,6 +23,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -47,6 +49,61 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminCP\graphics\arrows.gif" />
+    <Content Include="AdminCP\graphics\arrow_down.gif" />
+    <Content Include="AdminCP\graphics\arrow_green.gif" />
+    <Content Include="AdminCP\graphics\bg_box.gif" />
+    <Content Include="AdminCP\graphics\bg_header.gif" />
+    <Content Include="AdminCP\graphics\bg_header2.gif" />
+    <Content Include="AdminCP\graphics\bg_input.gif" />
+    <Content Include="AdminCP\graphics\bg_logo.jpg" />
+    <Content Include="AdminCP\graphics\bg_subcell.gif" />
+    <Content Include="AdminCP\graphics\bg_subcell_header.gif" />
+    <Content Include="AdminCP\graphics\blank.gif" />
+    <Content Include="AdminCP\graphics\blue_bar_bg.gif" />
+    <Content Include="AdminCP\graphics\blue_dot_line_3.gif" />
+    <Content Include="AdminCP\graphics\body_bg.gif" />
+    <Content Include="AdminCP\graphics\checkbox.gif" />
+    <Content Include="AdminCP\graphics\download.gif" />
+    <Content Include="AdminCP\graphics\down_arr.gif" />
+    <Content Include="AdminCP\graphics\header_bg.jpg" />
+    <Content Include="AdminCP\graphics\icon_collapse.gif" />
+    <Content Include="AdminCP\graphics\icon_collapse2.gif" />
+    <Content Include="AdminCP\graphics\icon_expand.gif" />
+    <Content Include="AdminCP\graphics\icon_expand2.gif" />
+    <Content Include="AdminCP\graphics\ijob_logo.gif" />
+    <Content Include="AdminCP\graphics\ijob_logo.png" />
+    <Content Include="AdminCP\graphics\nav_bg.gif" />
+    <Content Include="AdminCP\graphics\nav_bg2.gif" />
+    <Content Include="AdminCP\graphics\nav_tab_hover.gif" />
+    <Content Include="AdminCP\graphics\tableft.gif" />
+    <Content Include="AdminCP\graphics\tabright.gif" />
+    <Content Include="AdminCP\graphics\unchecked.gif" />
+    <Content Include="AdminCP\Mods\usContact.ascx" />
+    <Content Include="AdminCP\Mods\usFooter.ascx" />
+    <Content Include="AdminCP\Mods\usNavigation.ascx" />
+    <Content Include="AdminCP\Pages\Index.aspx" />
+    <Content Include="AdminCP\Scripts\hoverIntent.js" />
+    <Content Include="AdminCP\Scripts\jquery-1.4.2.min.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f1.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f2.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f3.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f4.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f5.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f6.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f7.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f8.js" />
+    <Content Include="AdminCP\Scripts\rm_menu\f9.js" />
+    <Content Include="AdminCP\Scripts\superfish.js" />
+    <Content Include="AdminCP\Scripts\wz_tooltip.js" />
+    <Content Include="AdminCP\Styles\additional.css" />
+    <Content Include="AdminCP\Styles\common.css" />
+    <Content Include="AdminCP\Styles\ie.css" />
+    <Content Include="AdminCP\Styles\main.css" />
+    <Content Include="AdminCP\Styles\Menu.IjobAdmin.css" />
+    <Content Include="AdminCP\Styles\reset.css" />
+    <Content Include="AdminCP\Styles\rm_main.css" />
+    <Content Include="AdminCP\Styles\screen.css" />
     <Content Include="Css\Layout\layout-default.css" />
     <Content Include="Css\Layout\layout-extend.css" />
     <Content Include="Css\Layout\Layout.base.css" />
@@ -186,9 +243,47 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCP\Master\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Master\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usContact.ascx.cs">
+      <DependentUpon>usContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usContact.ascx.designer.cs">
+      <DependentUpon>usContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usFooter.ascx.cs">
+      <DependentUpon>usFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usFooter.ascx.designer.cs">
+      <DependentUpon>usFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usNavigation.ascx.cs">
+      <DependentUpon>usNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usNavigation.ascx.designer.cs">
+      <DependentUpon>usNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Pages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Pages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\ContentMain.Master.cs">
       <DependentUpon>ContentMain.Master</DependentUpon>
@@ -201,9 +296,15 @@
       <DependentUpon>Main.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Master\Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
     <Compile Include="Master\MainLayout.master.cs">
       <DependentUpon>MainLayout.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MainLayout.master.designer.cs">
+      <DependentUpon>MainLayout.master</DependentUpon>
     </Compile>
     <Compile Include="Mods\About\_About.aspx.cs">
       <DependentUpon>_About.aspx</DependentUpon>
@@ -237,6 +338,9 @@
       <DependentUpon>Address.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Mods\Main\Address.ascx.designer.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Mods\Main\Class\TopMenuUI.cs" />
     <Compile Include="Mods\Main\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
@@ -249,13 +353,22 @@
       <DependentUpon>ucCloud.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Mods\Main\ucCloud.ascx.designer.cs">
+      <DependentUpon>ucCloud.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Mods\Main\ucCompanyInfo.ascx.cs">
       <DependentUpon>ucCompanyInfo.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Mods\Main\ucCompanyInfo.ascx.designer.cs">
+      <DependentUpon>ucCompanyInfo.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Mods\Main\ucFlash.ascx.cs">
       <DependentUpon>ucFlash.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucFlash.ascx.designer.cs">
+      <DependentUpon>ucFlash.ascx</DependentUpon>
     </Compile>
     <Compile Include="Mods\Main\ucLinkSite.ascx.cs">
       <DependentUpon>ucLinkSite.ascx</DependentUpon>
@@ -267,6 +380,9 @@
     <Compile Include="Mods\Main\ucNavigate.ascx.cs">
       <DependentUpon>ucNavigate.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucNavigate.ascx.designer.cs">
+      <DependentUpon>ucNavigate.ascx</DependentUpon>
     </Compile>
     <Compile Include="Mods\Main\ucOnline.ascx.cs">
       <DependentUpon>ucOnline.ascx</DependentUpon>
@@ -300,6 +416,9 @@
       <DependentUpon>_News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Mods\News\_News.aspx.designer.cs">
+      <DependentUpon>_News.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -323,6 +442,10 @@
   <ItemGroup>
     <Content Include="Master\ContentMain.Master" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="AdminCP\graphics\Thumbs.db" />
+    <Content Include="AdminCP\Master\Admin.Master" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
@@ -333,8 +456,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>21563</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/KimHoangWeb</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

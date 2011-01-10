@@ -31,6 +31,15 @@ namespace KimHoangWeb.AdminCP.Master {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// usHeader1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::KimHoangWeb.AdminCP.Mods.usHeader usHeader1;
+        
+        /// <summary>
         /// usNavigation1 control.
         /// </summary>
         /// <remarks>
@@ -38,5 +47,23 @@ namespace KimHoangWeb.AdminCP.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::KimHoangWeb.AdminCP.Mods.usNavigation usNavigation1;
+        
+        /// <summary>
+        /// ContentPlaceHolder1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        
+        /// <summary>
+        /// usFooter1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::KimHoangWeb.AdminCP.Mods.usFooter usFooter1;
     }
 }

@@ -81,8 +81,12 @@
     <Content Include="AdminCP\graphics\unchecked.gif" />
     <Content Include="AdminCP\Mods\usContact.ascx" />
     <Content Include="AdminCP\Mods\usFooter.ascx" />
+    <Content Include="AdminCP\Mods\usHeader.ascx" />
     <Content Include="AdminCP\Mods\usNavigation.ascx" />
     <Content Include="AdminCP\Pages\Index.aspx" />
+    <Content Include="AdminCP\Pages\Login.aspx" />
+    <Content Include="AdminCP\Pages\NewsManagement.aspx" />
+    <Content Include="AdminCP\Pages\SupportManagement.aspx" />
     <Content Include="AdminCP\Scripts\hoverIntent.js" />
     <Content Include="AdminCP\Scripts\jquery-1.4.2.min.js" />
     <Content Include="AdminCP\Scripts\rm_menu\f1.js" />
@@ -97,13 +101,40 @@
     <Content Include="AdminCP\Scripts\superfish.js" />
     <Content Include="AdminCP\Scripts\wz_tooltip.js" />
     <Content Include="AdminCP\Styles\additional.css" />
+    <Content Include="AdminCP\Styles\ChromeBlackGridView.css" />
+    <Content Include="AdminCP\Styles\ChromeGridView.css" />
     <Content Include="AdminCP\Styles\common.css" />
+    <Content Include="AdminCP\Styles\GamerGridView.css" />
+    <Content Include="AdminCP\Styles\GlassBlackGridView.css" />
     <Content Include="AdminCP\Styles\ie.css" />
+    <Content Include="AdminCP\Styles\Images\Add1.ico" />
+    <Content Include="AdminCP\Styles\Images\edit.png" />
+    <Content Include="AdminCP\Styles\Images\editdelete.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderChrome.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderChromeBlack.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderGamer.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderGlassBlack.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderSoftGrey.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderWhiteChrome.png" />
+    <Content Include="AdminCP\Styles\Images\FireworksNative\PagerGamer.png" />
+    <Content Include="AdminCP\Styles\Images\HeaderChrome.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderChromeBlack.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderGamer.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderGamer_Hover.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderGamer_left.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderGlassBlack.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderSoftGrey.jpg" />
+    <Content Include="AdminCP\Styles\Images\HeaderWhiteChrome.jpg" />
+    <Content Include="AdminCP\Styles\Images\PagerGamer.jpg" />
+    <Content Include="AdminCP\Styles\Images\YahooSprite.gif" />
     <Content Include="AdminCP\Styles\main.css" />
     <Content Include="AdminCP\Styles\Menu.IjobAdmin.css" />
     <Content Include="AdminCP\Styles\reset.css" />
     <Content Include="AdminCP\Styles\rm_main.css" />
     <Content Include="AdminCP\Styles\screen.css" />
+    <Content Include="AdminCP\Styles\SoftGreyGridView.css" />
+    <Content Include="AdminCP\Styles\WhiteChromeGridView.css" />
+    <Content Include="AdminCP\Styles\YahooGridView.css" />
     <Content Include="Css\Layout\layout-default.css" />
     <Content Include="Css\Layout\layout-extend.css" />
     <Content Include="Css\Layout\Layout.base.css" />
@@ -128,6 +159,7 @@
     <Content Include="Css\redmond\images\ui-icons_f9bd01_256x240.png" />
     <Content Include="Css\redmond\jquery-ui-1.8.6.custom.css" />
     <Content Include="Css\SubMain.css" />
+    <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="Img\01.png" />
     <Content Include="Img\02.png" />
@@ -228,10 +260,12 @@
     <Content Include="Mods\Main\ucSupport.ascx" />
     <Content Include="Mods\Main\ucTopMenu.ascx" />
     <Content Include="Mods\News\_News.aspx" />
+    <Content Include="Pages\Error.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Styles\Site.css" />
+    <Content Include="visitor.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -243,6 +277,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCP\Controls\KimHoangDataView.cs" />
     <Compile Include="AdminCP\Master\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,6 +299,13 @@
     <Compile Include="AdminCP\Mods\usFooter.ascx.designer.cs">
       <DependentUpon>usFooter.ascx</DependentUpon>
     </Compile>
+    <Compile Include="AdminCP\Mods\usHeader.ascx.cs">
+      <DependentUpon>usHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Mods\usHeader.ascx.designer.cs">
+      <DependentUpon>usHeader.ascx</DependentUpon>
+    </Compile>
     <Compile Include="AdminCP\Mods\usNavigation.ascx.cs">
       <DependentUpon>usNavigation.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,12 +320,39 @@
     <Compile Include="AdminCP\Pages\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminCP\Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Pages\NewsManagement.aspx.cs">
+      <DependentUpon>NewsManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Pages\NewsManagement.aspx.designer.cs">
+      <DependentUpon>NewsManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Pages\SupportManagement.aspx.cs">
+      <DependentUpon>SupportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Pages\SupportManagement.aspx.designer.cs">
+      <DependentUpon>SupportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KimHoangBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master\ContentMain.Master.cs">
       <DependentUpon>ContentMain.Master</DependentUpon>
@@ -419,11 +488,17 @@
     <Compile Include="Mods\News\_News.aspx.designer.cs">
       <DependentUpon>_News.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master\Main.master" />
@@ -445,6 +520,9 @@
   <ItemGroup>
     <None Include="AdminCP\graphics\Thumbs.db" />
     <Content Include="AdminCP\Master\Admin.Master" />
+    <None Include="AdminCP\Styles\Images\FireworksNative\Thumbs.db" />
+    <None Include="AdminCP\Styles\Images\PhotoshopNative\YahooSprite.psd" />
+    <None Include="AdminCP\Styles\Images\Thumbs.db" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

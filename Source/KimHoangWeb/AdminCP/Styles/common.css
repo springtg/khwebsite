@@ -110,7 +110,9 @@
 	cursor: default;
 	outline: none;
 }
-.btn_small{width:80px;}
+.btn_small{width:80px;
+    top: 0px;
+}
 .btn_medium{width:150px;}
 .btn_long{width:220px;}
 

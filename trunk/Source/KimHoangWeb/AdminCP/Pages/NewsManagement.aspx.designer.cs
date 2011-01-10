@@ -7,18 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KimHoangWeb.Mods.Main {
+namespace KimHoangWeb.AdminCP.Pages {
     
     
-    public partial class ucOnline {
-        
-        /// <summary>
-        /// tong control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tong;
+    public partial class NewsManagement {
     }
 }

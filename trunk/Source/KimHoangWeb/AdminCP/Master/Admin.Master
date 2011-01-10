@@ -1,22 +1,31 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="KimHoangWeb.AdminCP.Master.Admin" %>
 
-<%@ Register src="../Mods/usNavigation.ascx" tagname="usNavigation" tagprefix="uc1" %>
+<%--<%@ Register src="../Mods/usNavigation.ascx" tagname="usNavigation" tagprefix="uc1" %>--%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="copyright" content="VTC Online" />
+    <meta name="copyright" content="Kim Hoang AD" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="Shortcut Icon" type="image/ico" href="favicon.html" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="../Styles/WhiteChromeGridView.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/Menu.IjobAdmin.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/screen.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/rm_main.css" rel="stylesheet" type="text/css" />
     <!--[if lte IE 7]><link href="../Styles/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+   
+   <script src="../Scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/hoverIntent.js" type="text/javascript"></script>
+
+    <script src="../Scripts/superfish.js" type="text/javascript"></script>
+
+    
+
     <script src="../Scripts/rm_menu/f1.js" type="text/javascript"></script>
     <script src="../Scripts/rm_menu/f2.js" type="text/javascript"></script>
     <script src="../Scripts/rm_menu/f3.js" type="text/javascript"></script>
@@ -33,142 +42,24 @@
     <div id="content">
         <!-- Header -->
         <div id="header">
-            <h1>
-                <a class="png" href="index-2.html">Ijob VTC</a> <span class="slogan">Your Slogan here...
-                </span>
-            </h1>
-            <div class="contact_info">
-                <!-- Logined -->
-                <p>
-                    Username: <b>HieuThao_TranLy</b>
-                </p>
-                <ul>
-                    <li><a href="#">Thong tin tai khoan</a> | </li>
-                    <li><a href="#">Thoat</a> </li>
-                </ul>
-            </div>
+            <KimHoang:usHeader  ID="usHeader1" runat="server" />
         </div>
         <!-- END header -->
         <!-- Navigation -->
         <div class="acp_nav">
-            <uc1:usNavigation ID="usNavigation1" runat="server" />
+            <KimHoang:usNavigation ID="usNavigation1" runat="server" />
+
+            <script type="text/javascript">                $(document).ready(function () { $("ul.sf-menu").superfish(); });</script>
         </div>
         <!-- END navigation -->
         <div id="main_content" class="subpage">
-            <div class="content_inner">
-                <h2>
-                    Cập nhật Tin tức</h2>
-                <div class="category">
-                    <h3>
-                        Danh mục tin tức</h3>
-                    <div class="cate_col">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Tìm việc </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Bí quyết phỏng vấn </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Viết hồ sơ </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Thư tìm việc </li>
-                        </ul>
-                    </div>
-                    <div class="cate_col">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Tìm việc </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Bí quyết phỏng vấn </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Viết hồ sơ </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Thư tìm việc </li>
-                        </ul>
-                    </div>
-                    <div class="cate_col">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Tìm việc </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Bí quyết phỏng vấn </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Viết hồ sơ </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Thư tìm việc </li>
-                        </ul>
-                    </div>
-                    <div class="cate_col">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Tìm việc </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Bí quyết phỏng vấn </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Viết hồ sơ </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Thư tìm việc </li>
-                        </ul>
-                    </div>
-                    <div class="cate_col">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Tìm việc </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Bí quyết phỏng vấn </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Viết hồ sơ </li>
-                            <li>
-                                <input type="checkbox" name="icate" class="checkbox" />
-                                Thư tìm việc </li>
-                        </ul>
-                    </div>
-                    <div class="clear">
-                    </div>
-                </div>
-                <div class="tabmenu">
-                    <ul>
-                        <li><a href="#" title="Link 1"><span>Link 1 </span></a></li>
-                        <li><a href="#" title="Link 2"><span>Link 2 </span></a></li>
-                        <li><a href="#" title="Link 3"><span>Link 3 </span></a></li>
-                        <li><a href="#" title="Longer Link Text"><span>Longer Link Text </span></a></li>
-                    </ul>
-                </div>
-                <div class="editor_area">
-                    srgs
-                </div>
-            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
     </div>
     <!-- END content -->
     <div id="footer">
-        <ul>
-            <li><a class="first" href="index-2.html">Home</a> | </li>
-            <li><a href="services.html">Our Services</a> | </li>
-            <li><a href="history.html">Our History</a> | </li>
-            <li><a href="gallery.html">Photo Gallery</a> | </li>
-            <li><a href="portfolio.html">Our Portfolio</a> | </li>
-            <li><a class="last" href="contact.html">Contact Us</a> </li>
-        </ul>
-        <span>Copyright &copy; 2008 Business Professional Package </span>
+        <KimHoang:usFooter ID="usFooter1" runat="server" />
     </div>
     </form>
 </body>

@@ -520,9 +520,7 @@
   <ItemGroup>
     <None Include="AdminCP\graphics\Thumbs.db" />
     <Content Include="AdminCP\Master\Admin.Master" />
-    <None Include="AdminCP\Styles\Images\FireworksNative\Thumbs.db" />
     <None Include="AdminCP\Styles\Images\PhotoshopNative\YahooSprite.psd" />
-    <None Include="AdminCP\Styles\Images\Thumbs.db" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

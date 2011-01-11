@@ -81,9 +81,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                             <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             DANH MỤC</h2>
@@ -201,9 +201,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                           <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             LIÊN KẾT SITE</h2>
@@ -223,9 +223,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                           <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             THÔNG TIN TRUY CẬP</h2>
@@ -249,9 +249,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+ <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 id="ContentTitle" class="title">
                          </h2>
@@ -275,9 +275,10 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                           
+                            <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             HỖ TRỢ TRỰC TUYẾN</h2>
@@ -297,9 +298,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                            <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             TIN TỨC</h2>
@@ -323,9 +324,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                             <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             ĐÁNH GIÁ</h2>
@@ -349,9 +350,9 @@ Công ty thiết kế Kim Hoàng
                 <div class="moduleHeaderContainer">
                     <div class="moduleHeader green" style="cursor: move;">
                         <a class="showHide" href="javascript:void(0)" style="visibility: hidden; width: 0pt;">
-                            <img width="15" height="15" src="http://cdn.netvibes.com/img/s.gif" class="icon actions-window-collapse"
+                           <img width="15" height="15" src="Img/s.gif" class="icon actions-window-collapse"
                                 alt="Collapse" title="Collapse"></a> <a class="ico" href="javascript:void(0)" style="display: block;">
-                                    <img width="16" height="16" class="hicon" src="http://cdn.netvibes.com/proxy/favIcon.php?url=http%3A%2F%2Fcdn.netvibes.com%2Fimg%2Fwand.png"
+                                    <img width="26" height="26" class="hicon" src="Img/chat.png"
                                         style="display: block;"></a>
                         <h2 class="title">
                             TỈ GIÁ</h2>

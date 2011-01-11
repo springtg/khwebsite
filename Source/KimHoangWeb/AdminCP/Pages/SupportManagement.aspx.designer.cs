@@ -19,7 +19,7 @@ namespace KimHoangWeb.AdminCP.Pages {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::KimHoangWeb.AdminCP.Controls.KimHoangGridView GridView1;
         
         /// <summary>
         /// SqlDataSource1 control.

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminCP/Master/Admin.Master" AutoEventWireup="true"
     CodeBehind="SupportManagement.aspx.cs" Inherits="KimHoangWeb.AdminCP.Pages.SupportManagement" %>
-
+    <%@ Register Assembly="KimHoangWeb" Namespace="KimHoangWeb.AdminCP.Controls" TagPrefix="cc1" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -10,15 +10,15 @@
         <div class="clear">
         </div>
         <div>
-            <asp:GridView ID="GridView1" runat="server" EnableModelValidation="True" AllowPaging="True"
+            <cc1:KimHoangGridView ID="GridView1" runat="server" EnableModelValidation="True" AllowPaging="True"
                 AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"
-                DataKeyNames="Id" ShowFooter="True" AlternatingRowStyle-CssClass="AltRowStyle"
+                DataKeyNames="Id" AlternatingRowStyle-CssClass="AltRowStyle"
                 HeaderStyle-CssClass="HeaderStyle" CssClass="GridViewStyle" PagerStyle-CssClass="PagerStyle"
                 RowStyle-CssClass="RowStyle" SelectedRowStyle-CssClass="SelectedRowStyle" EditRowStyle-CssClass="EditRowStyle"
-                OnRowCommand="GridView1_RowCommand">
+                OnRowCommand="GridView1_RowCommand" Width="100%" ShowFooter="true" ShowFooterWhenEmpty="true" ShowHeader="true" ShowHeaderWhenEmpty="true">
                 <AlternatingRowStyle CssClass="AltRowStyle"></AlternatingRowStyle>
                 <Columns>
-                    <asp:TemplateField HeaderText="ID" SortExpression="ID">
+                    <asp:TemplateField HeaderText="Mã" SortExpression="ID">
                         <ItemTemplate>
                             <asp:Label ID="lblID" runat="server" Text='<%#Eval("Id") %>'>
                             </asp:Label>
@@ -27,45 +27,45 @@
                             <asp:Button ID="btnInsert" runat="server" CommandName="Add" Text="Insert" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="FirstName" SortExpression="NickId">
+                    <asp:TemplateField HeaderText="Mã Hỗ Trợ" SortExpression="NickId">
                         <ItemTemplate>
-                            <asp:Label ID="lblFirstName" runat="server" Text='<%#Eval("NickId") %>'>
+                            <asp:Label ID="lbl_NickId" runat="server" Text='<%#Eval("NickId") %>'>
                             </asp:Label>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtFirstName" runat="server" Text='<%#Bind("NickId") %>'>
+                            <asp:TextBox ID="txt_NickId" runat="server" Text='<%#Bind("NickId") %>'>
                             </asp:TextBox>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txtFname" runat="server">
+                            <asp:TextBox ID="txt_I_NickId"  Width="100%"  runat="server">
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="LastName" SortExpression="Support_Type_Id">
+                    <asp:TemplateField HeaderText="Loại Hỗ Trợ" SortExpression="Support_Type_Id">
                         <ItemTemplate>
-                            <asp:Label ID="lblLastName" runat="server" Text='<%#Eval("Support_Type_Id") %>'>
+                            <asp:Label ID="lbl_Support_Type_Id" runat="server" Text='<%#Eval("Support_Type_Id") %>'>
                             </asp:Label>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtLastName" runat="server" Text='<%#Bind("Support_Type_Id") %>'>
+                            <asp:TextBox ID="txt_Support_Type_Id" runat="server" Width="100%" Text='<%#Bind("Support_Type_Id") %>'>
                             </asp:TextBox>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txtLname" runat="server">
+                            <asp:TextBox ID="txt_I_Support_Type_Id"  Width="100%"  runat="server">
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Department" SortExpression="Display_Name">
+                    <asp:TemplateField HeaderText="Tên Hiễn Thị" SortExpression="Display_Name">
                         <ItemTemplate>
-                            <asp:Label ID="lblDepartment" runat="server" Text='<%#Eval("Display_Name") %>'>
+                            <asp:Label ID="lbl_Display_Name" runat="server" Text='<%#Eval("Display_Name") %>'>
                             </asp:Label>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txtDepartmentName" runat="server" Text='<%#Bind("Display_Name") %>'>
+                            <asp:TextBox ID="txt_Display_Name"  Width="100%"  runat="server" Text='<%#Bind("Display_Name") %>'>
                             </asp:TextBox>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txtDept" runat="server">
+                            <asp:TextBox ID="txt_I_Display_Name"   Width="100%"  runat="server">
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
@@ -78,21 +78,38 @@
                 <PagerStyle CssClass="PagerStyle"></PagerStyle>
                 <RowStyle CssClass="RowStyle"></RowStyle>
                 <SelectedRowStyle CssClass="SelectedRowStyle"></SelectedRowStyle>
-                <emptydatarowstyle backcolor="LightBlue" forecolor="Red" />
-                 <emptydatatemplate>
-                 Khong co du lieu
-                 </emptydatatemplate>
-            </asp:GridView>
+                <EmptyDataRowStyle BackColor="LightBlue" ForeColor="Red" />
+                <EmptyDataTemplate>
+                    <%=ConfigurationManager.AppSettings["EmptyData"]%>
+                </EmptyDataTemplate>
+            </cc1:KimHoangGridView>
         </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
-            SelectCommand="SELECT [Id], [NickId], [Support_Type_Id], [Display_Name] FROM [SUPPORT] WHERE DELETED = 0"
-            InsertCommand ="INSERT INTO [Employees] ([FirstName],[LastName],[Department], [Location]) VALUES (@FirstName, @LastName, @Department, @Location)">
+            SelectCommand="USP_ADMIN_SEL_SUPPORT" SelectCommandType="StoredProcedure" InsertCommand="USP_ADMIN_INS_SUPPORT"
+            InsertCommandType="StoredProcedure" DeleteCommand="USP_ADMIN_DEL_SUPPORT" DeleteCommandType="StoredProcedure"
+            UpdateCommand="USP_ADMIN_UPD_SUPPORT" UpdateCommandType="StoredProcedure">
             <InsertParameters>
-                <asp:Parameter Name="FirstName" Type="String" />
-                <asp:Parameter Name="LastName" Type="String" />
-                <asp:Parameter Name="Department" Type="String" />
-                <asp:Parameter Name="Location" Type="String" />
+                <asp:Parameter Name="NickId" Type="String" />
+                <asp:Parameter Name="Display_Name" Type="String" />
+                <asp:Parameter Name="Support_Type_Id" Type="Int32" />
+                <asp:SessionParameter Name="Crt_By" SessionField="LoginUserName" Type="String"/>
+                <asp:SessionParameter Name="Language_Id" SessionField="LanguageId" Type="Int32"
+                    DefaultValue="1" />
             </InsertParameters>
+            <DeleteParameters>
+                <asp:Parameter Name="Id" Type="Int32" />
+                <asp:Parameter Name="Crt_By" Type="String" />
+                <asp:Parameter Name="Language_Id" Type="Int32" />
+            </DeleteParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="Id" Type="Int32" />
+                <asp:Parameter Name="NickId" Type="String" />
+                <asp:Parameter Name="Display_Name" Type="String" />
+                <asp:Parameter Name="Support_Type_Id" Type="Int32" />
+                <asp:SessionParameter Name="Crt_By" SessionField="LoginUserName" Type="String"/>
+                <asp:SessionParameter Name="Language_Id" SessionField="LanguageId" Type="Int32"
+                    DefaultValue="1" />
+            </UpdateParameters>
         </asp:SqlDataSource>
     </div>
 </asp:Content>

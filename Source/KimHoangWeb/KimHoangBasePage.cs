@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI.HtmlControls;
+using System.Web.UI;
 
 namespace KimHoangWeb
 {
@@ -70,6 +71,27 @@ namespace KimHoangWeb
         void Page_Error(object sender, EventArgs e)
         {
             Response.Redirect(Error_Page);
+            
+        }
+
+        protected Control KH_FindControl(ControlCollection arg_CtrlPage, string arg_CtrlName)
+        {
+            foreach (Control c in arg_CtrlPage)
+            {
+                if (c.ID != null)
+                {
+                    if (c.ID == arg_CtrlName)
+                    {
+                        return c;
+                    }
+                }
+
+                if (c.HasControls())
+                {
+                    return KH_FindControl(c.Controls, arg_CtrlName);
+                }
+            }
+            return null;
         }
     
 

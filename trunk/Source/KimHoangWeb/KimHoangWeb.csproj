@@ -277,7 +277,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminCP\Controls\KimHoangDataView.cs" />
+    <Compile Include="AdminCP\Controls\KimHoangGridView.cs" />
     <Compile Include="AdminCP\Master\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

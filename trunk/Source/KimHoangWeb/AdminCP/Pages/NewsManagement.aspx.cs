@@ -14,5 +14,10 @@ namespace KimHoangWeb.AdminCP.Pages
             
 
         }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
     }
 }

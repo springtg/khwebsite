@@ -25,6 +25,7 @@ namespace KimHoangWeb
             Session["LoginUserID"] = null;
             Session["LoginUserName"] = "Guest";
             Session["Language"] = "VN";
+            Session["LanguageId"] = 1;
             Session["LoginOK"] = false;
 
 
@@ -70,7 +71,8 @@ namespace KimHoangWeb
         {
             Session["LoginUserID"] = null;
             Session["LoginUserName"] = string.Empty;
-            Session["Language"] = string.Empty;
+            Session["Language"] = "VN";
+            Session["LanguageId"] = 1;
             Session["LoginOK"] = false;
 
             //// Code that runs on application shutdown

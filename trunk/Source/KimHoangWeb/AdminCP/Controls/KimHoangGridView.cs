@@ -10,6 +10,7 @@ namespace KimHoangWeb.AdminCP.Controls
 {
     public class KimHoangGridView: GridView
     {
+        private SqlDataSource l_SqlDataSource = null;
         /// <summary>
         /// 
         /// </summary>

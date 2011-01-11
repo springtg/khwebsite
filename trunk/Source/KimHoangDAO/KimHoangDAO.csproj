@@ -43,6 +43,7 @@
     <Compile Include="CDataMapper.cs" />
     <Compile Include="CDb.cs" />
     <Compile Include="ControlDao.cs" />
+    <Compile Include="SupportDAO.cs" />
     <Compile Include="UserDao.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

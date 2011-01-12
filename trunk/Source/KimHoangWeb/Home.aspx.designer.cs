@@ -57,6 +57,15 @@ public partial class index {
     protected global::Mods_Main_ucFlash ucFlash1;
     
     /// <summary>
+    /// MenuLeft control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::KimHoangWeb.Mods.Main.MenuLeft MenuLeft;
+    
+    /// <summary>
     /// ucLinkSite control.
     /// </summary>
     /// <remarks>

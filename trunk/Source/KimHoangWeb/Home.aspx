@@ -6,6 +6,7 @@
 <%@ Register Src="~/Mods/Main/ucCloud.ascx" TagName="ucCloud" TagPrefix="kimhoang" %>
 <%@ Register Src="Mods/Main/ucFlash.ascx" TagName="ucFlash" TagPrefix="kimhoang" %>
 <%@ Register Src="Mods/Main/ucNavigate.ascx" TagName="ucNavigate" TagPrefix="kimhoang" %>
+<%@ Register Src="~/Mods/Main/MenuLeft.ascx" TagName="MenuLeft" TagPrefix="kimhoang" %>
 <%@ Register Src="Mods/Main/ucSupport.ascx" TagName="ucSupport" TagPrefix="kimhoang" %>
 <%@ Register Src="Mods/Main/ucRate.ascx" TagName="ucRate" TagPrefix="kimhoang" %>
 <%@ Register Src="Mods/Main/ucOnline.ascx" TagName="ucOnline" TagPrefix="kimhoang" %>
@@ -91,107 +92,7 @@ Công ty thiết kế Kim Hoàng
                 </div>
                 <div class="moduleContent socialwizard socialNetworkWizard" id="m_1713525360">
                     <div class="content">
-                        <div class="art-vmenublockcontent">
-                            <div class="art-vmenublockcontent-body">
-                                <!-- block-content -->
-                                <ul class="art-vmenu">
-                                    <li class=""><a href="" class=" active"><span class="l"></span><span class="r"></span><span
-                                        class="t">Dịch vụ sáng tạo</span></a>
-                                        <ul class=" active">
-                                            <li class="art-vmenu-separator art-vmenu-separator art-vmenu-separator-first"><span
-                                                class="art-vmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s1" class="">Bộ nhận diện thương hiệu</a></li><li
-                                                class="art-vsubmenu-separator"><span class="art-vsubmenu-separator-span"></span>
-                                            </li>
-                                            <li class=" active"><a class=" active" href="page.html">Bộ nhận diện sản phẩm</a></li><li
-                                                class="art-vsubmenu-separator"><span class="art-vsubmenu-separator-span"></span>
-                                            </li>
-                                            <li class=""><a href="page.html?i3s3" class="">Ấn phẩm văn phòng</a></li
-                                             <li class=""><a href="page.html?i3s3" class="">Thiết kế logo</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="art-vmenu-separator"><span class="art-vmenu-separator-span"></span></li>
-                                    <li class=""><a href="" class="active"><span class="l"></span><span class="r"></span><span
-                                        class="t">Thiết kế Website</span></a>
-                                        <ul class=" active">
-                                            <li class="art-vmenu-separator art-vmenu-separator art-vmenu-separator-first"><span
-                                                class="art-vmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s1" class="">Thiết kế web</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=" active"><a class=" active" href="page.html">Giải pháp Email</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s3" class="">Domain-Hosting</a></li>
-                                             <li class=""><a href="page.html?i3s3" class="">Bảo trì cập nhật</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="art-vmenu-separator"><span class="art-vmenu-separator-span"></span></li>
-                                    <li class=" active"><a href="page.html?i3" class=" active"><span class="l"></span><span
-                                        class="r"></span><span class="t">Quảng cáo truyền thông</span></a>
-                                        <ul class=" active">
-                                            <li class="art-vmenu-separator art-vmenu-separator art-vmenu-separator-first"><span
-                                                class="art-vmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s1" class="">Quảng bá Google</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=" active"><a class=" active" href="page.html">Quảng bá Facebook</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s3" class="">Quảng bá Banner</a></li>
-                                             <li class=""><a href="page.html?i3s3" class="">Quảng bá Web</a></li>
-                                              <li class=""><a href="page.html?i3s3" class="">Tiếp thị trực tuyến </a></li>
-                                               <li class=""><a href="page.html?i3s3" class="">Dịch vụ nội dung </a></li>
-                                                <li class=""><a href="page.html?i3s3" class="">Quảng cáo báo chí </a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="art-vmenu-separator"><span class="art-vmenu-separator-span"></span></li>
-                                    <li class=""><a href="page.html?i4" class="active"><span class="l"></span><span class="r">
-                                    </span><span class="t">Dịch vụ quà tặng quảng cáo</span></a>
-                                     <ul class=" active">
-                                            <li class="art-vmenu-separator art-vmenu-separator art-vmenu-separator-first"><span
-                                                class="art-vmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s1" class="">Cập táp văn phòng</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=" active"><a class=" active" href="page.html">Sổ tay các loại</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s3" class="">Áo mưa</a></li>
-                                             <li class=""><a href="page.html?i3s3" class="">Lịch năm - Thiệp</a></li>
-                                              <li class=""><a href="page.html?i3s3" class="">Quà tặng khách hàng </a></li>
-                                        </ul>
-                                    
-                                     </li>
-                                    <li class="art-vmenu-separator"><span class="art-vmenu-separator-span"></span></li>
-                                    <li class="active"><a href="page.html?i5" class="active"><span class="l"></span><span class="r">
-                                    </span><span class="t">Phần mền quản lý</span></a>
-                                    <ul class=" active">
-                                            <li class="art-vmenu-separator art-vmenu-separator art-vmenu-separator-first"><span
-                                                class="art-vmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s1" class="">Quản lý khách hàng</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=" active"><a class=" active" href="page.html">Quản lý kho</a></li><li class="art-vsubmenu-separator">
-                                                <span class="art-vsubmenu-separator-span"></span></li>
-                                            <li class=""><a href="page.html?i3s3" class="">Quản lý công văn</a></li>
-                                             <li class=""><a href="page.html?i3s3" class="">Phần mền chuyên dụng</a></li>
-                                              <li class=""><a href="page.html?i3s3" class="">Tư vấn công nghệ thông tin</a></li>
-                                          
-                                        </ul>
-
-                                      
-                                    </li>
-                                    <li class="art-vmenu-separator"><span class="art-vmenu-separator-span"></span></li>
-                                    <li class=""><a href="page.html?i6" class="active"><span class="l"></span><span class="r">
-                                    </span><span class="t">In ấn quảng cáo</span></a>
-                                    
-                                    
-                                     </li>
-                                    <li class="art-vmenu-separator"><span class="art-vmenu-separator-span"></span></li>
-                                    <li class=""><a href="page.html?i7" class="active"><span class="l"></span><span class="r">
-                                    </span><span class="t">Dịch vụ bảo hộ</span></a>
-                                     </li>
-                                   
-                                </ul>
-                                <!-- /block-content -->
-                                <div class="cleared">
-                                </div>
-                            </div>
-                        </div>
+                       <kimhoang:MenuLeft ID="MenuLeft" runat="server" />
                     </div>
                 </div>
             </div>

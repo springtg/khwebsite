@@ -1,0 +1,108 @@
+body
+{
+    font-family: Tahoma,Arial,Verdana;
+}
+#menu2
+{
+    line-height: 0;
+    list-style: none outside none;
+    margin-top: -1px;
+    padding: 0;
+    width: auto;
+}
+ul.menu, ul.menu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+ul.menu a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+ul.menu li
+{
+    margin-top: 1px;
+}
+
+ul.menu li a
+{
+    color: #F6F5EE;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    background: url('/Img/vmenu.png')no-repeat scroll left -60px transparent;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+ul.menu li a:hover
+{
+    background-position: 0 -30px;
+    color: #7D713F;
+}
+
+ul.menu li ul li a
+{
+    color: #7D713F;
+    display: block;
+    white-space: nowrap;
+    height: 20px;
+    line-height: 20px;
+    overflow: visible;
+    background: url('/Img/vsubitem.gif')repeat-x scroll 20px 0px transparent;
+    font-weight: normal;
+    padding-left: 35px;
+    font-size: 11px;
+}
+
+ul.menu li ul li a:hover
+{
+    background-position: 20px -20px;
+    color: #B7951A;
+}
+
+.code
+{
+    border: 1px solid #ccc;
+    list-style-type: decimal-leading-zero;
+    padding: 5px;
+    margin: 0;
+}
+.code code
+{
+    display: block;
+    padding: 3px;
+    margin-bottom: 0;
+}
+.code li
+{
+    background: #ddd;
+    border: 1px solid #ccc;
+    margin: 0 0 2px 2.2em;
+}
+.indent1
+{
+    padding-left: 1em;
+}
+.indent2
+{
+    padding-left: 2em;
+}
+.indent3
+{
+    padding-left: 3em;
+}
+.indent4
+{
+    padding-left: 4em;
+}
+.indent5
+{
+    padding-left: 5em;
+}

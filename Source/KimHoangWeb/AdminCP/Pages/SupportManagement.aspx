@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminCP/Master/Admin.Master" AutoEventWireup="true"
     CodeBehind="SupportManagement.aspx.cs" Inherits="KimHoangWeb.AdminCP.Pages.SupportManagement" %>
-    <%@ Register Assembly="KimHoangWeb" Namespace="KimHoangWeb.AdminCP.Controls" TagPrefix="cc1" %>
+
+<%@ Register Assembly="KimHoangWeb" Namespace="KimHoangWeb.AdminCP.Controls" TagPrefix="KimHoang" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+    <title>Kim Hoàng :: Quản lý Hỗ Trợ Trực Tuyến </title>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content_inner">
@@ -10,12 +12,13 @@
         <div class="clear">
         </div>
         <div>
-            <cc1:KimHoangGridView ID="GridView1" runat="server" EnableModelValidation="True" AllowPaging="True"
-                AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"
-                DataKeyNames="Id" AlternatingRowStyle-CssClass="AltRowStyle"
-                HeaderStyle-CssClass="HeaderStyle" CssClass="GridViewStyle" PagerStyle-CssClass="PagerStyle"
-                RowStyle-CssClass="RowStyle" SelectedRowStyle-CssClass="SelectedRowStyle" EditRowStyle-CssClass="EditRowStyle"
-                OnRowCommand="GridView1_RowCommand" Width="100%" ShowFooter="true" ShowFooterWhenEmpty="true" ShowHeader="true" ShowHeaderWhenEmpty="true">
+            <KimHoang:KimHoangGridView ID="GridView1" runat="server" EnableModelValidation="True"
+                AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"
+                DataKeyNames="Id" AlternatingRowStyle-CssClass="AltRowStyle" HeaderStyle-CssClass="HeaderStyle"
+                CssClass="GridViewStyle" PagerStyle-CssClass="PagerStyle" RowStyle-CssClass="RowStyle"
+                SelectedRowStyle-CssClass="SelectedRowStyle" EditRowStyle-CssClass="EditRowStyle"
+                OnRowCommand="GridView1_RowCommand" Width="100%" ShowFooter="true" ShowFooterWhenEmpty="true"
+                ShowHeader="true" ShowHeaderWhenEmpty="true">
                 <AlternatingRowStyle CssClass="AltRowStyle"></AlternatingRowStyle>
                 <Columns>
                     <asp:TemplateField HeaderText="Mã" SortExpression="ID">
@@ -33,11 +36,11 @@
                             </asp:Label>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txt_NickId" runat="server" Text='<%#Bind("NickId") %>'>
+                            <asp:TextBox ID="txt_NickId" runat="server" Width="100%" Text='<%#Bind("NickId") %>'>
                             </asp:TextBox>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txt_I_NickId"  Width="100%"  runat="server">
+                            <asp:TextBox ID="txt_I_NickId" Width="99%" runat="server">
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
@@ -51,7 +54,7 @@
                             </asp:TextBox>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txt_I_Support_Type_Id"  Width="100%"  runat="server">
+                            <asp:TextBox ID="txt_I_Support_Type_Id" Width="99%" runat="server">
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
@@ -61,11 +64,11 @@
                             </asp:Label>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txt_Display_Name"  Width="100%"  runat="server" Text='<%#Bind("Display_Name") %>'>
+                            <asp:TextBox ID="txt_Display_Name" Width="100%" runat="server" Text='<%#Bind("Display_Name") %>'>
                             </asp:TextBox>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txt_I_Display_Name"   Width="100%"  runat="server">
+                            <asp:TextBox ID="txt_I_Display_Name" Width="99%" runat="server">
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
@@ -82,7 +85,7 @@
                 <EmptyDataTemplate>
                     <%=ConfigurationManager.AppSettings["EmptyData"]%>
                 </EmptyDataTemplate>
-            </cc1:KimHoangGridView>
+            </KimHoang:KimHoangGridView>
         </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
             SelectCommand="USP_ADMIN_SEL_SUPPORT" SelectCommandType="StoredProcedure" InsertCommand="USP_ADMIN_INS_SUPPORT"
@@ -92,9 +95,8 @@
                 <asp:Parameter Name="NickId" Type="String" />
                 <asp:Parameter Name="Display_Name" Type="String" />
                 <asp:Parameter Name="Support_Type_Id" Type="Int32" />
-                <asp:SessionParameter Name="Crt_By" SessionField="LoginUserName" Type="String"/>
-                <asp:SessionParameter Name="Language_Id" SessionField="LanguageId" Type="Int32"
-                    DefaultValue="1" />
+                <asp:SessionParameter Name="Crt_By" SessionField="LoginUserName" Type="String" />
+                <asp:SessionParameter Name="Language_Id" SessionField="LanguageId" Type="Int32" DefaultValue="1" />
             </InsertParameters>
             <DeleteParameters>
                 <asp:Parameter Name="Id" Type="Int32" />
@@ -106,9 +108,8 @@
                 <asp:Parameter Name="NickId" Type="String" />
                 <asp:Parameter Name="Display_Name" Type="String" />
                 <asp:Parameter Name="Support_Type_Id" Type="Int32" />
-                <asp:SessionParameter Name="Crt_By" SessionField="LoginUserName" Type="String"/>
-                <asp:SessionParameter Name="Language_Id" SessionField="LanguageId" Type="Int32"
-                    DefaultValue="1" />
+                <asp:SessionParameter Name="Crt_By" SessionField="LoginUserName" Type="String" />
+                <asp:SessionParameter Name="Language_Id" SessionField="LanguageId" Type="Int32" DefaultValue="1" />
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>

@@ -83,6 +83,7 @@
     <Content Include="AdminCP\Mods\usFooter.ascx" />
     <Content Include="AdminCP\Mods\usHeader.ascx" />
     <Content Include="AdminCP\Mods\usNavigation.ascx" />
+    <Content Include="AdminCP\Pages\CustomerManagement.aspx" />
     <Content Include="AdminCP\Pages\Index.aspx" />
     <Content Include="AdminCP\Pages\Login.aspx" />
     <Content Include="AdminCP\Pages\NewsManagement.aspx" />
@@ -312,6 +313,13 @@
     </Compile>
     <Compile Include="AdminCP\Mods\usNavigation.ascx.designer.cs">
       <DependentUpon>usNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Pages\CustomerManagement.aspx.cs">
+      <DependentUpon>CustomerManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Pages\CustomerManagement.aspx.designer.cs">
+      <DependentUpon>CustomerManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminCP\Pages\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

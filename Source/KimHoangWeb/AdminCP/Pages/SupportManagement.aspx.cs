@@ -18,6 +18,8 @@ namespace KimHoangWeb.AdminCP.Pages
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+           // string strValue = Page.Request.Form["name of the control"].ToString();
+
             if (e.CommandName == "Add")
             {
                 string l_NickId = ((TextBox)GridView1.FooterRow.FindControl("txt_I_NickId")).Text;
@@ -44,6 +46,7 @@ namespace KimHoangWeb.AdminCP.Pages
                 //    string a = ((TextBox)KH_FindControl(this.Controls, "txt_I_NickId")).Text;
 
                 //}
+                
 
             }
 

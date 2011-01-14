@@ -10,8 +10,8 @@
     <meta name="copyright" content="Kim Hoang AD" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="Shortcut Icon" type="image/ico" href="favicon.html" />
-    <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <title></title>
     </asp:ContentPlaceHolder>
     <link href="../Styles/WhiteChromeGridView.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/Menu.IjobAdmin.css" rel="stylesheet" type="text/css" />

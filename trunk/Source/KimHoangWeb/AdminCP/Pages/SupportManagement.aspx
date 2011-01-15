@@ -17,17 +17,18 @@
                 DataKeyNames="Id" AlternatingRowStyle-CssClass="AltRowStyle" HeaderStyle-CssClass="HeaderStyle"
                 CssClass="GridViewStyle" PagerStyle-CssClass="PagerStyle" RowStyle-CssClass="RowStyle"
                 SelectedRowStyle-CssClass="SelectedRowStyle" EditRowStyle-CssClass="EditRowStyle"
-                OnRowCommand="GridView1_RowCommand" Width="100%" ShowFooter="true" ShowFooterWhenEmpty="true"
-                ShowHeader="true" ShowHeaderWhenEmpty="true">
+                OnRowCommand="GridView1_RowCommand" Width="100%" ShowFooter="True" 
+                ShowFooterWhenEmpty="True" ShowHeaderWhenEmpty="True" 
+                onrowdatabound="GridView1_RowDataBound">
                 <AlternatingRowStyle CssClass="AltRowStyle"></AlternatingRowStyle>
                 <Columns>
-                    <asp:TemplateField HeaderText="Mã" SortExpression="ID">
+                    <asp:TemplateField HeaderText="Mã" ItemStyle-HorizontalAlign="Center" SortExpression="ID">
                         <ItemTemplate>
                             <asp:Label ID="lblID" runat="server" Text='<%#Eval("Id") %>'>
                             </asp:Label>
                         </ItemTemplate>
-                        <FooterTemplate>
-                            <asp:Button ID="btnInsert" runat="server" CommandName="Add" Text="Insert" />
+                        <FooterTemplate >
+                            <asp:ImageButton ToolTip="Thêm Mới" ID="btnInsert" ImageUrl="~/AdminCP/Styles/Images/add_new.png" ImageAlign="Left" runat="server" CommandName="Add" Text="Insert" />
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Mã Hỗ Trợ" SortExpression="NickId">
@@ -74,7 +75,9 @@
                     </asp:TemplateField>
                     <asp:CommandField ButtonType="Image" EditImageUrl="~/AdminCP/Styles/Images/edit.png"
                         DeleteImageUrl="~/AdminCP/Styles/Images/editdelete.png" ShowDeleteButton="True"
-                        ShowEditButton="True" />
+                        ShowEditButton="True" 
+                        CancelImageUrl="~/AdminCP/Styles/Images/page_cancel.png" 
+                        UpdateImageUrl="~/AdminCP/Styles/Images/Save.png" />
                 </Columns>
                 <EditRowStyle CssClass="EditRowStyle"></EditRowStyle>
                 <HeaderStyle CssClass="HeaderStyle"></HeaderStyle>

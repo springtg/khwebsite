@@ -55,16 +55,16 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Logo Khách Hàng" SortExpression="Logo">
                         <ItemTemplate>
-                            <asp:Label ID="lbl_Logo" runat="server" Text='<%#Eval("Logo") %>'>
-                            </asp:Label>
+                            <asp:Image ID="img_Logo" runat="server" ImageUrl='../Img_Logo/<%#Eval("Logo") %>'>
+                            </asp:Image>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="txt_Logo" runat="server" Width="100%" Text='<%#Bind("Logo") %>'>
-                            </asp:TextBox>
+                            <asp:FileUpload ID="txt_Logo" runat="server" Width="100%" Text='../Img_Logo/<%#Bind("Logo") %>'>
+                            </asp:FileUpload>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txt_I_Logo" Width="99%" runat="server">
-                            </asp:TextBox>
+                            <asp:FileUpload ID="txt_I_Logo"  Width="99%" runat="server">
+                            </asp:FileUpload>
                         </FooterTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Website Khách Hàng" SortExpression="Website">
@@ -95,7 +95,7 @@
                             </asp:TextBox>
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Email Khách Hàng" SortExpression="Phone">
+                    <asp:TemplateField HeaderText="ĐT Khách Hàng" SortExpression="Phone">
                         <ItemTemplate>
                             <asp:Label ID="lbl_Phone" runat="server" Text='<%#Eval("Phone") %>'>
                             </asp:Label>

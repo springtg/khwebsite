@@ -109,6 +109,7 @@
     <Content Include="AdminCP\Styles\GlassBlackGridView.css" />
     <Content Include="AdminCP\Styles\ie.css" />
     <Content Include="AdminCP\Styles\Images\Add1.ico" />
+    <Content Include="AdminCP\Styles\Images\add_new.png" />
     <Content Include="AdminCP\Styles\Images\edit.png" />
     <Content Include="AdminCP\Styles\Images\editdelete.png" />
     <Content Include="AdminCP\Styles\Images\FireworksNative\HeaderChrome.png" />
@@ -127,6 +128,8 @@
     <Content Include="AdminCP\Styles\Images\HeaderSoftGrey.jpg" />
     <Content Include="AdminCP\Styles\Images\HeaderWhiteChrome.jpg" />
     <Content Include="AdminCP\Styles\Images\PagerGamer.jpg" />
+    <Content Include="AdminCP\Styles\Images\page_cancel.png" />
+    <Content Include="AdminCP\Styles\Images\Save.png" />
     <Content Include="AdminCP\Styles\Images\YahooSprite.gif" />
     <Content Include="AdminCP\Styles\main.css" />
     <Content Include="AdminCP\Styles\Menu.IjobAdmin.css" />
@@ -249,8 +252,11 @@
     <Content Include="Mods\Job\_Job.aspx" />
     <Content Include="Mods\Main\Address.ascx" />
     <Content Include="Mods\Main\Css\Main.css" />
+    <Content Include="Mods\Main\Css\MenuLeft.css" />
     <Content Include="Mods\Main\JS\Main.js" />
+    <Content Include="Mods\Main\JS\MenuLeft.js" />
     <Content Include="Mods\Main\Main.aspx" />
+    <Content Include="Mods\Main\MenuLeft.ascx" />
     <Content Include="Mods\Main\ucCloud.ascx" />
     <Content Include="Mods\Main\ucCompanyInfo.ascx" />
     <Content Include="Mods\Main\ucFlash.ascx" />
@@ -426,6 +432,13 @@
     <Compile Include="Mods\Main\Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Mods\Main\MenuLeft.ascx.cs">
+      <DependentUpon>MenuLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\MenuLeft.ascx.designer.cs">
+      <DependentUpon>MenuLeft.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Mods\Main\ucCloud.ascx.cs">
       <DependentUpon>ucCloud.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -506,6 +519,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdminCP\Img_Logo\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

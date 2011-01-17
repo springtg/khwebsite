@@ -5,7 +5,7 @@ using System.Text;
 
 namespace KimHoangOBJ
 {
-    class CSubCat
+   public class CSubCat
     {
 
         public int Id { get; set; }

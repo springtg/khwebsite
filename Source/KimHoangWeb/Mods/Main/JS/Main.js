@@ -3,13 +3,14 @@
     $('ul.art-menu li a').live('click', function () {
         KimHoang.Mods.Main.SelectTopMenu($(this));
     });
-
+ 
 });
 
 if (typeof KimHoang == 'undefined')
     KimHoang = {};
 if (typeof KimHoang.Mods == 'undefined')
     KimHoang.Mods = {};
+//===============================//
 KimHoang.Mods.Main = {
     SelectTopMenu: function (aObj) {
         var link = $(aObj).attr('link');
@@ -29,5 +30,17 @@ KimHoang.Mods.Main = {
         $("#KimHoangMainContent").html(iframe);
         $("#ContentTitle").html('Trang chủ');
 
+    }
+}
+//===================================//
+KimHoang.Mods.LeftMenu = {
+    Init: function () {
+        $('#khMenuLeft>li>a').live('click', function () {
+            KimHoang.Mods.LeftMenu.SelectMenu($(this));
+        });
+    },
+    SelectMenu: function (aObj) {
+        $("#KimHoangMainContent").html($(aObj).html());
+        $("#ContentTitle").html($(aObj).html());
     }
 }

@@ -48,26 +48,33 @@ function initMenus() {
 		$('#' + this.id + '.expandfirst ul:first').show();
 	});
 	$('ul.menu li a').click(
-		function() {
-			var checkElement = $(this).next();
-			
-			var parent = this.parentNode.parentNode.id;
+		function () {
+		    var checkElement = $(this).next();
 
-			if($('#' + parent).hasClass('noaccordion')) {
-				$(this).next().slideToggle('normal');
-				return false;
-			}
-			if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-				if($('#' + parent).hasClass('collapsible')) {
-					$('#' + parent + ' ul:visible').slideUp('normal');
-				}
-				return false;
-			}
-			if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-				$('#' + parent + ' ul:visible').slideUp('normal');
-				checkElement.slideDown('normal');
-				return false;
-			}
+		    var parent = this.parentNode.parentNode.id;
+		   
+		    if (checkElement.size() === 0) {
+		        KimHoang.Mods.LeftMenu.SelectMenu($(this));
+		    }
+		    if ($('#' + parent).hasClass('noaccordion')) {
+		        $(this).next().slideToggle('normal');
+		        alert("no0");
+		        return false;
+		    }
+		    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+		        if ($('#' + parent).hasClass('collapsible')) {
+		            $('#' + parent + ' ul:visible').slideUp('normal');
+		        }
+		        // KimHoang.Mods.LeftMenu.SelectMenu($(this));
+		        return false;
+		    }
+		    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+		        $('#' + parent + ' ul:visible').slideUp('normal');
+		        checkElement.slideDown('normal');
+		        alert("no");
+		        KimHoang.Mods.LeftMenu.SelectMenu($(this));
+		        return false;
+		    }
 		}
 	);
 }

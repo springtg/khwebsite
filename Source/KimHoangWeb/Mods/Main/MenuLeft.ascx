@@ -1,18 +1,19 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuLeft.ascx.cs" Inherits="KimHoangWeb.Mods.Main.MenuLeft" %>
 <link href="Mods/Main/Css/MenuLeft.css" rel="stylesheet" type="text/css" />
 <script src="Mods/Main/JS/MenuLeft.js" type="text/javascript"></script>
-	<ul id="menu2" class="menu expandfirst">
+	<ul id="khMenuLeft" class="menu expandfirst">
 		<li>
-			<a href="#">Weblog Tools</a>
+			<a id="1" href="#" tabid="4" link="">Thiết kế Website</a>
 			<ul>
 				<li><a href="javascript:void(0);" tabid="4" link="Mods/Customer/_Customer.aspx">PivotX</a></li>
-				<li><a href="http://www.wordpress.org/">WordPress</a></li>
-				<li><a href="http://www.textpattern.com/">Textpattern</a></li>
-				<li><a href="http://typosphere.org/">Typo</a></li>
+				<li><a href="">Thiết kế web</a></li>
+				<li><a href="">Giải pháp Email</a></li>
+				<li><a href="http://typosphere.org/">Domain-Hosting</a></li>
+                <li><a href="http://typosphere.org/">Bảo trì cập nhật</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="#">Programming Languages</a>
+			<a href="#">Quảng cáo truyền thông</a>
 			<ul>
 				<li><a href="http://www.php.net/">PHP</a></li>
 				<li><a href="http://www.ruby-lang.org/en/">Ruby</a></li>
@@ -22,9 +23,9 @@
 				<li><a href="http://en.wikipedia.org/wiki/C_Sharp">C#</a></li>
 			</ul>
 		</li>
-		<li><a href="javascript:void(0);">Marco's blog (no submenu)</a></li>
+		<li ><a href="javascript:void(0);">Dịch vụ quà tặng</a></li>
 		<li>
-			<a href="javascript:void(0);">Cool Stuff</a>
+			<a href="javascript:void(0);">Phần mền quản lý</a>
 			<ul>
 				<li><a href="http://www.apple.com/">Apple</a></li>
 				<li><a href="http://www.nikon.com/">Nikon</a></li>
@@ -33,7 +34,25 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#">Search Engines</a>
+			<a href="#">Dịch vụ sáng tạo</a>
+			<ul>
+				<li><a href="http://search.yahoo.com/">Yahoo!</a></li>
+				<li><a href="http://www.google.com/">Google</a></li>
+				<li><a href="http://www.ask.com/">Ask.com</a></li>
+				<li><a href="http://www.live.com/?searchonly=true">Live Search</a></li>
+			</ul>
+		</li>
+        <li>
+			<a href="#">In ấn quảng cáo</a>
+			<ul>
+				<li><a href="http://search.yahoo.com/">Yahoo!</a></li>
+				<li><a href="http://www.google.com/">Google</a></li>
+				<li><a href="http://www.ask.com/">Ask.com</a></li>
+				<li><a href="http://www.live.com/?searchonly=true">Live Search</a></li>
+			</ul>
+		</li>
+        <li>
+			<a href="#">Dịch vụ bảo hộ</a>
 			<ul>
 				<li><a href="http://search.yahoo.com/">Yahoo!</a></li>
 				<li><a href="http://www.google.com/">Google</a></li>

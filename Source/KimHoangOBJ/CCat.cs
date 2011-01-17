@@ -5,7 +5,7 @@ using System.Text;
 
 namespace KimHoangOBJ
 {
-    class CCat
+  public class CCat
     {
 
         public int Id { get; set; }

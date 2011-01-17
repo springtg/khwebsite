@@ -15,6 +15,7 @@
 Công ty thiết kế Kim Hoàng
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="HeaderPlaceHolder" runat="Server">
+    <link rel="Shortcut Icon" href="Img/logokh.ico" type="image/x-icon" />
     <link href="Css/Menu.css" rel="stylesheet" type="text/css" />
     <link href="Css/Panel/screen.css" rel="stylesheet" type="text/css" />
     <link href="Css/Panel/screen.css.m.css" rel="stylesheet" type="text/css" />

@@ -23,7 +23,6 @@ namespace KimHoangDAO
             try
             {
                 DataTable dt = new DataAccess().GetDataByStoredProcedure("usp_SelectCONTROL",
-               // string result = new iMarket_DBFunction().CallActionPublic(1, CStoreProcedure.Core.GetControlChildOf,
                     new string[] { "@ParentId", "@LanguageID" },
                     new object[] { parentControlID, languageID });
                 list = CDb.MapList<CControl>(dt);

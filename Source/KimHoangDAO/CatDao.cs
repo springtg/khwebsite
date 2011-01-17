@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using KimHoangUtil;
+using KimHoangOBJ;
 
 namespace KimHoangDAO
 {
@@ -15,15 +16,15 @@ namespace KimHoangDAO
         /// <param name="parentControlID">parentControlID</param>
         ///  <param name="languageID">languageID</param>
         /// <returns>List<CCat></returns>    
-        public IList<CatDao> GetCatBy_langID(int languageID)
+        public IList<CCat> GetCatBy_langID(int languageID)
         {
-            IList<CatDao> list = null;
+            IList<CCat> list = null;
             try
             {
                 DataTable dt = new DataAccess().GetDataByStoredProcedure("usp_SelectCATEGORY",
                     new string[] { "@LanguageID" },
                     new object[] { languageID });
-                list = CDb.MapList<CatDao>(dt);
+                list = CDb.MapList<CCat>(dt);
             }
             catch (Exception ex)
             {

@@ -40,7 +40,8 @@ KimHoang.Mods.LeftMenu = {
         });
     },
     SelectMenu: function (aObj) {
-        $("#KimHoangMainContent").html($(aObj).html());
+        var detail = $(aObj).attr('detail');      
+        $("#KimHoangMainContent").html(detail);
         $("#ContentTitle").html($(aObj).html());
     }
 }

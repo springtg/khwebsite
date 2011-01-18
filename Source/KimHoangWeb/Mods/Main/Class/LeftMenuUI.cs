@@ -19,7 +19,7 @@ namespace KimHoangWeb.Mods.Main.Class
            //     <li><a href="http://typosphere.org/">Bảo trì cập nhật</a></li>
            // </ul>
             StringBuilder ret = new StringBuilder();
-            string tempalte = "<li><a class='{0}' href='javascript:void(0);' tabid='{1}' link='{2}' >{3}</a></li>";
+            string tempalte = "<li><a class='{0}' href='javascript:void(0);' tabid='{1}' link='{2}'>{3}</a></li>";
             KimHoangDAO.SubCatDao Dao = new KimHoangDAO.SubCatDao();
             IList<KimHoangOBJ.CSubCat> listSubCat = Dao.GetSubCatBy_langID(catId, langId);
             if (listSubCat.Count > 0)
@@ -40,7 +40,7 @@ namespace KimHoangWeb.Mods.Main.Class
         {               
             StringBuilder ret = new StringBuilder();
             ret.Append("<ul class='menu expandfirst' id='khMenuLeft'> ");
-            string tempalte = "<li><a class='{0}' href='javascript:void(0);' tabid='{1}' link='{2}' >{3}</a>{4}</li>";
+            string tempalte = "<li><a class='{0}' href='javascript:void(0);' tabid='{1}' link='{2}'  detail='{5}' >{3}</a>{4}</li>";
             KimHoangDAO.CatDao Dao = new KimHoangDAO.CatDao();
             IList<KimHoangOBJ.CCat> listCat = Dao.GetCatBy_langID(langId);
             if (listCat.Count > 0)
@@ -51,7 +51,7 @@ namespace KimHoangWeb.Mods.Main.Class
                     {
                         string cssClass = (i == 0 ? "active" : "");
                         string htmlSub = GetHTMLSubCat(listCat[i].Id, langId);
-                        ret.Append(string.Format(tempalte, cssClass, listCat[i].Id, listCat[i].Id, listCat[i].CategoryName, htmlSub));
+                        ret.Append(string.Format(tempalte, cssClass, listCat[i].Id, listCat[i].Id, listCat[i].CategoryName, htmlSub, listCat[i].Detail));
                     }
                 }
             }

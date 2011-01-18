@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuLeft.ascx.cs" Inherits="KimHoangWeb.Mods.Main.MenuLeft" %>
 <link href="Mods/Main/Css/MenuLeft.css" rel="stylesheet" type="text/css" />
 <script src="Mods/Main/JS/MenuLeft.js" type="text/javascript"></script>
-	<ul id="khMenuLeft" class="menu expandfirst">
+ <asp:Literal ID="ltrMenuLeft" runat="server" EnableViewState="false"></asp:Literal>
+<%--	<ul id="khMenuLeft" class="menu expandfirst">
 		<li>
 			<a id="1" href="#" tabid="4" link="">Thiết kế Website</a>
 			<ul>
@@ -60,4 +61,4 @@
 				<li><a href="http://www.live.com/?searchonly=true">Live Search</a></li>
 			</ul>
 		</li>
-	</ul>	
+	</ul>	--%>

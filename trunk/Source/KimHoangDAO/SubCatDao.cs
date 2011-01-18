@@ -20,10 +20,10 @@ namespace KimHoangDAO
         {
             IList<CSubCat> list = null;
             try
-            {
-                DataTable dt = new DataAccess().GetDataByStoredProcedure("usp_SelectCATEGORY",
-                    new string[] { "@LanguageID" },
-                    new object[] { languageID });
+            {              
+                DataTable dt = new DataAccess().GetDataByStoredProcedure("usp_SelectSUBCATEGORY",
+                    new string[] { "@LangId","@IdCat" },
+                    new object[] { languageID, catID });
                 list = CDb.MapList<CSubCat>(dt);
             }
             catch (Exception ex)

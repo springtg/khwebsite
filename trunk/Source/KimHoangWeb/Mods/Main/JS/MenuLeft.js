@@ -58,7 +58,6 @@ function initMenus() {
 		    }
 		    if ($('#' + parent).hasClass('noaccordion')) {
 		        $(this).next().slideToggle('normal');
-		        alert("no0");
 		        return false;
 		    }
 		    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
@@ -71,7 +70,6 @@ function initMenus() {
 		    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
 		        $('#' + parent + ' ul:visible').slideUp('normal');
 		        checkElement.slideDown('normal');
-		        alert("no");
 		        KimHoang.Mods.LeftMenu.SelectMenu($(this));
 		        return false;
 		    }

@@ -21,7 +21,7 @@ namespace KimHoangWeb.Mods.Main.Class
             StringBuilder ret = new StringBuilder();
             string tempalte = "<li><a class='{0}' href='javascript:void(0);' tabid='{1}' link='{2}' >{3}</a></li>";
             KimHoangDAO.SubCatDao Dao = new KimHoangDAO.SubCatDao();
-            IList<KimHoangOBJ.CSubCat> listSubCat = Dao.GetSubCatBy_langID(1, langId);
+            IList<KimHoangOBJ.CSubCat> listSubCat = Dao.GetSubCatBy_langID(catId, langId);
             if (listSubCat.Count > 0)
             {
                 for (int i = 0; i < listSubCat.Count; i++)

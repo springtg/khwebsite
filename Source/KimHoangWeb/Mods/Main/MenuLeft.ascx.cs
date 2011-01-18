@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using KimHoangWeb.Mods.Main.Class;
 
 namespace KimHoangWeb.Mods.Main
 {
@@ -11,7 +12,12 @@ namespace KimHoangWeb.Mods.Main
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LoadMenu();
+        }
+        private void LoadMenu()
+        {
+            LeftMenuUI ui = new LeftMenuUI();
+            ltrMenuLeft.Text = ui.GetHTMLCat(129);
         }
     }
 }

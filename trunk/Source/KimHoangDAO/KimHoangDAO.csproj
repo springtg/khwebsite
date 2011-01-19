@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatDao.cs" />
     <Compile Include="CDataMapper.cs" />
     <Compile Include="CDb.cs" />
     <Compile Include="ControlDao.cs" />
     <Compile Include="CLanguageDAO.cs" />
     <Compile Include="CIntroductionInfoDAO.cs" />
     <Compile Include="CVisitorCountDAO.cs" />
+    <Compile Include="SubCatDao.cs" />
     <Compile Include="SupportDAO.cs" />
     <Compile Include="UserDao.cs" />
     <Compile Include="DataAccess.cs" />

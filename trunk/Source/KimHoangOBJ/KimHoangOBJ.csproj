@@ -39,9 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CCat.cs" />
     <Compile Include="CControl.cs" />
     <Compile Include="CLanguage.cs" />
     <Compile Include="CIntroductionInfo.cs" />
+    <Compile Include="CSubCat.cs" />
     <Compile Include="CSupport.cs" />
     <Compile Include="CVisitorCount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

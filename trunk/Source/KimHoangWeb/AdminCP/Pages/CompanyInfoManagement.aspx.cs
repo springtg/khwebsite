@@ -11,12 +11,13 @@ namespace KimHoangWeb.AdminCP.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            if (!IsPostBack)
             {
-                
+                SetLanguageToDropDownList(ref ddl_Language);
                 LoadIntroductionInfo(Convert.ToInt32(ddl_Language.SelectedValue));
             }
         }
+
 
         private void LoadIntroductionInfo(int arg_Language_Id)
         {
@@ -32,7 +33,7 @@ namespace KimHoangWeb.AdminCP.Pages
 
         protected void btn_Save_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

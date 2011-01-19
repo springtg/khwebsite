@@ -15,6 +15,7 @@ namespace KimHoangWeb
         protected const string Session_LoginOK = "LoginOK";
         protected const string Login_Page = "Login.aspx";
         protected const string Error_Page = "Error.aspx";
+        protected IList<KimHoangOBJ.CLanguage> Lst_Language_Object;
 
 
         private string _metakeywords;
@@ -64,6 +65,7 @@ namespace KimHoangWeb
             {
                 Response.Redirect(Login_Page);
             }
+            InitLanguage();
             base.OnLoad(e);
 
         }
@@ -93,7 +95,27 @@ namespace KimHoangWeb
             }
             return null;
         }
-    
+
+        protected void SetLanguageToDropDownList(ref System.Web.UI.WebControls.DropDownList arg_DropDownList)
+        {
+            if (Lst_Language_Object == null)
+            {
+                InitLanguage();
+            }
+            arg_DropDownList.DataSource = Lst_Language_Object;
+            arg_DropDownList.DataTextField="Language_Name";
+            arg_DropDownList.DataValueField = "Id";
+        }
+
+        protected void InitLanguage()
+        {
+            if (Lst_Language_Object == null)
+            {
+                KimHoangDAO.CLanguageDAO _lang = new KimHoangDAO.CLanguageDAO();
+                Lst_Language_Object = _lang.GetLanguageList();
+            }
+        }
+
 
     }
 }

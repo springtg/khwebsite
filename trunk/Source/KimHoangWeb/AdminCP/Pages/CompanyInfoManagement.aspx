@@ -13,11 +13,10 @@
         </div>
         <div>
             Ngôn Ngữ:
-            <asp:DropDownList ID="ddl_Language" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1"
-                DataTextField="Language_Name" DataValueField="Id">
+            <asp:DropDownList ID="ddl_Language" runat="server" AutoPostBack="True">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
-                SelectCommand="USP_ADMIN_SEL_LANGUAGE" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+            <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
+                SelectCommand="USP_ADMIN_SEL_LANGUAGE" SelectCommandType="StoredProcedure"></asp:SqlDataSource>--%>
         </div>
         <div>
             <FCKeditorV2:FCKeditor ID="FCKeditor1" Width="100%" Height="280px" runat="server"

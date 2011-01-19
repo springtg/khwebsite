@@ -8,7 +8,7 @@
                     <li class="rmItem rmFirst"><a class="rmLink" href="javascript:void(0);"><span class="rmText">Hệ Thống</span></a>
                         <div class="rmSlide">
                             <ul class="rmVertical rmGroup rmLevel1">
-                                <li class="rmItem rmFirst"><a class="rmLink" href="Introduction.aspx"><span class="rmText">Giới Thiệu</span></a> </li>
+                                <li class="rmItem rmFirst"><a class="rmLink" href="IntroductionManagement.aspx"><span class="rmText">Giới Thiệu</span></a> </li>
                                 <li class="rmItem rmLast"><a class="rmLink" href="#"><span class="rmText">Liên Hệ</span></a>
                                 </li>
                             </ul>

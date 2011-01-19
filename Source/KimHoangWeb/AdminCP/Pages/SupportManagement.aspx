@@ -12,14 +12,13 @@
         <div class="clear">
         </div>
         <div>
-            <KimHoang:KimHoangGridView ID="GridView1" runat="server" EnableModelValidation="True"
-                AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"
-                DataKeyNames="Id" AlternatingRowStyle-CssClass="AltRowStyle" HeaderStyle-CssClass="HeaderStyle"
-                CssClass="GridViewStyle" PagerStyle-CssClass="PagerStyle" RowStyle-CssClass="RowStyle"
-                SelectedRowStyle-CssClass="SelectedRowStyle" EditRowStyle-CssClass="EditRowStyle"
-                OnRowCommand="GridView1_RowCommand" Width="100%" ShowFooter="True" 
-                ShowFooterWhenEmpty="True" ShowHeaderWhenEmpty="True" 
-                onrowdatabound="GridView1_RowDataBound">
+            <kimhoang:kimhoanggridview id="GridView1" runat="server" enablemodelvalidation="True"
+                allowpaging="True" allowsorting="True" autogeneratecolumns="False" datasourceid="SqlDataSource1"
+                datakeynames="Id" alternatingrowstyle-cssclass="AltRowStyle" headerstyle-cssclass="HeaderStyle"
+                cssclass="GridViewStyle" pagerstyle-cssclass="PagerStyle" rowstyle-cssclass="RowStyle"
+                selectedrowstyle-cssclass="SelectedRowStyle" editrowstyle-cssclass="EditRowStyle"
+                onrowcommand="GridView1_RowCommand" width="100%" showfooter="True" showfooterwhenempty="True"
+                showheaderwhenempty="True" onrowdatabound="GridView1_RowDataBound">
                 <AlternatingRowStyle CssClass="AltRowStyle"></AlternatingRowStyle>
                 <Columns>
                     <asp:TemplateField HeaderText="Mã" ItemStyle-HorizontalAlign="Center" SortExpression="ID">
@@ -88,7 +87,7 @@
                 <EmptyDataTemplate>
                     <%=ConfigurationManager.AppSettings["EmptyData"]%>
                 </EmptyDataTemplate>
-            </KimHoang:KimHoangGridView>
+            </kimhoang:kimhoanggridview>
         </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
             SelectCommand="USP_ADMIN_SEL_SUPPORT" SelectCommandType="StoredProcedure" InsertCommand="USP_ADMIN_INS_SUPPORT"

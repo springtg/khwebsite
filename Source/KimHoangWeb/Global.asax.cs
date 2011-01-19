@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.IO;
+using System.Data;
 
 namespace KimHoangWeb
 {
@@ -13,28 +14,50 @@ namespace KimHoangWeb
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            //Code that runs on application startup
-            string path = Server.MapPath("~") + "visitor.txt";
-            if (!File.Exists(path))
-                File.WriteAllText(path, "0");
-            Application["SLtruycap"] = int.Parse(File.ReadAllText(path)); 
+            //cau hinh cho editor
+            Application["FCKeditor:UserFilesPath"] = "../../../../../../img/";
+            Application["HomNay"] = 0;
+            Application["HomQua"] = 0;
+            Application["TuanNay"] = 0;
+            Application["TuanTruoc"] = 0;
+            Application["ThangNay"] = 0;
+            Application["ThangTruoc"] = 0;
+            Application["TatCa"] = 0;
+            Application["visitors_online"] = 0;
+
         }
 
         protected void Session_Start(object sender, EventArgs e)
         {
+            //thiet lap sesion
+            Session.Timeout = 150;
             Session["LoginUserID"] = null;
             Session["LoginUserName"] = "Guest";
             Session["Language"] = "VN";
             Session["LanguageId"] = 1;
             Session["LoginOK"] = false;
-
-
-            //// Code that runs when a new session is started
-            if (Application["SLonline"] == null)
-                Application["SLonline"] = 1;
-            else
-                Application["SLonline"] = (int)Application["SLonline"] + 1;
-            Application["SLtruycap"] = (int)Application["SLtruycap"] + 1; 
+            //thiet lap dem so luong
+            Application.Lock();
+            Application["visitors_online"] = Convert.ToInt32(Application["visitors_online"]) + 1;
+            Application.UnLock();
+            try
+            {
+                
+                KimHoangDAO.CVisitorCountDAO _vcd = new KimHoangDAO.CVisitorCountDAO();
+                IList<KimHoangOBJ.CVisitorCount> _lvc = _vcd.GetVistorCount();
+                if (_lvc != null)
+                {
+                    Application["HomNay"] = _lvc[0].HomNay.ToString("#,###");
+                    Application["HomQua"] = _lvc[0].HomQua.ToString("#,###");
+                    Application["TuanNay"] = _lvc[0].TuanNay.ToString("#,###");
+                    Application["TuanTruoc"] = _lvc[0].TuanTruoc.ToString("#,###");
+                    Application["ThangNay"] = _lvc[0].ThangNay.ToString("#,###");
+                    Application["ThangTruoc"] = _lvc[0].ThangTruoc.ToString("#,###");
+                    Application["TatCa"] = _lvc[0].TatCa.ToString("#,###");
+                }
+                _lvc = null;
+            }
+            catch { }
 
         }
 
@@ -55,16 +78,9 @@ namespace KimHoangWeb
 
         protected void Session_End(object sender, EventArgs e)
         {
-            // Code that runs when a session ends.
-            // Note: The Session_End event is raised only when the sessionstate mode
-            // is set to InProc in the Web.config file. If session mode is set to StateServer
-            // or SQLServer, the event is not raised.
-            int i = (int)Application["SLonline"];
-            if (i > 1)
-                Application["SLonline"] = i - 1;
-            string path = Server.MapPath("~") + "visitor.txt";
-            File.WriteAllText(path, Application["SLtruycap"].ToString());
-
+            Application.Lock();
+	        Application["visitors_online"] = Convert.ToUInt32(Application["visitors_online"]) - 1;
+	        Application.UnLock();
         }
 
         protected void Application_End(object sender, EventArgs e)
@@ -77,7 +93,7 @@ namespace KimHoangWeb
 
             //// Code that runs on application shutdown
             string path = Server.MapPath("~") + "visitor.txt";
-            File.WriteAllText(path, Application["SLtruycap"].ToString()); 
+            File.WriteAllText(path, Application["SLtruycap"].ToString());
         }
     }
 }

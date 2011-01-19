@@ -40,7 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CControl.cs" />
+    <Compile Include="CLanguage.cs" />
+    <Compile Include="CIntroductionInfo.cs" />
     <Compile Include="CSupport.cs" />
+    <Compile Include="CVisitorCount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

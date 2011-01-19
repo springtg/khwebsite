@@ -20,7 +20,7 @@ namespace KimHoangWeb.AdminCP.Pages
         private void LoadIntroductionInfo(int arg_Language_Id)
         {
             KimHoangDAO.CCompanyInfoDAO info=new KimHoangDAO.CCompanyInfoDAO();
-            IList<KimHoangOBJ.CCompanyInfo> list = info.GetIntroductionInfo(arg_Language_Id);
+            IList<KimHoangOBJ.CCompanyInfo> list = info.GetCompanyInfo(arg_Language_Id);
             if (list != null)
             {
                 hdf_Introduction_id.Value = Convert.ToString(list[0].Id);

@@ -45,7 +45,7 @@
     <Compile Include="CDb.cs" />
     <Compile Include="ControlDao.cs" />
     <Compile Include="CLanguageDAO.cs" />
-    <Compile Include="CIntroductionInfoDAO.cs" />
+    <Compile Include="CCompanyInfoDAO.cs" />
     <Compile Include="CVisitorCountDAO.cs" />
     <Compile Include="SubCatDao.cs" />
     <Compile Include="SupportDAO.cs" />

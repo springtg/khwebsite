@@ -6,7 +6,7 @@ using KimHoangUtil;
 
 namespace KimHoangDAO
 {
-    public class CIntroductionInfoDAO
+    public class CCompanyInfoDAO
     {
         /// <summary>
         /// Get Application By Application ID
@@ -14,15 +14,15 @@ namespace KimHoangDAO
         /// <param name="parentControlID">parentControlID</param>
         ///  <param name="languageID">languageID</param>
         /// <returns>List<CControl></returns>    
-       public IList<CIntroductionInfo> GetIntroductionInfo(int languageID)
+       public IList<CCompanyInfo> GetIntroductionInfo(int languageID)
         {
-            IList<CIntroductionInfo> list = null;
+            IList<CCompanyInfo> list = null;
             try
             {
                 DataTable dt = new DataAccess().GetDataByStoredProcedure("USP_ADMIN_SEL_INTRODUCTION_INFO",
                     new string[] { "@language_Id"},
                     new object[] {  languageID });
-                list = CDb.MapList<CIntroductionInfo>(dt);
+                list = CDb.MapList<CCompanyInfo>(dt);
             }
             catch (Exception ex)
             {

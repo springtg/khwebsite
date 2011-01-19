@@ -129,5 +129,11 @@ namespace KimHoangWeb.AdminCP.Controls
                 this.ViewState["ShowFooterWhenEmpty"] = value;
             }
         }
+
+        //protected override void OnInit(EventArgs e)
+        //{
+        //    base.OnInit(e);
+        //    this.RowStyle.CssClass
+        //}
     }
 }

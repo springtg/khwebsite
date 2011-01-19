@@ -32,7 +32,7 @@
                             </ul>
                         </div>
                     </li>
-                  <li class="rmItem rmLast"><a class="rmLink" href="#"><span class="rmText">Tin Tức</span></a>
+                  <li class="rmItem rmLast"><a class="rmLink" href="../Pages/NewsManagement.aspx"><span class="rmText">Tin Tức</span></a>
                      
                     </li>
                     <li class="rmItem rmLast"><a class="rmLink" href="#"><span class="rmText">Tuyển Dụng</span></a></li>

@@ -60,19 +60,19 @@ namespace KimHoangWeb
                 tag.Content = MetaDescription;
                 Header.Controls.Add(tag);
             }
-            //if (Session[Session_LoginUserID] == null)
-            //{
-            //    Response.Redirect(Login_Page);
-            //}
+            if (Session[Session_LoginUserID] == null)
+            {
+                Response.Redirect(Login_Page);
+            }
             base.OnLoad(e);
 
         }
 
-        void Page_Error(object sender, EventArgs e)
-        {
-            Response.Redirect(Error_Page);
+        //void Page_Error(object sender, EventArgs e)
+        //{
+        //    Response.Redirect(Error_Page);
             
-        }
+        //}
 
         protected Control KH_FindControl(ControlCollection arg_CtrlPage, string arg_CtrlName)
         {

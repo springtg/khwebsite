@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminCP/Master/Admin.Master" AutoEventWireup="true"
-    CodeBehind="CompanyInfoManagement.aspx.cs" Inherits="KimHoangWeb.AdminCP.Pages.IntroductionManagement" %>
+    CodeBehind="CompanyInfoManagement.aspx.cs" Inherits="KimHoangWeb.AdminCP.Pages.CompanyInfoManagement" %>
 
 <%@ Register Assembly="FredCK.FCKeditorV2" Namespace="FredCK.FCKeditorV2" TagPrefix="FCKeditorV2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">

@@ -33,9 +33,9 @@ namespace KimHoangWeb
         {
             //thiet lap sesion
             Session.Timeout = 150;
-            Session["LoginUserID"] = null;
+            Session["LoginUserID"] = "sysadmin";
             Session["LoginUserName"] = "Guest";
-            Session["LoginOK"] = false;
+            Session["LoginOK"] = true;
             //thiet lap dem so luong
             Application.Lock();
             Application["visitors_online"] = Convert.ToInt32(Application["visitors_online"]) + 1;

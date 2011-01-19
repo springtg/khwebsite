@@ -7,12 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace KimHoangWeb.AdminCP.Pages
 {
-    public partial class CompanyInfoManagement : System.Web.UI.Page
+    public partial class CompanyInfoManagement : KimHoangBasePage// System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
+                
                 LoadIntroductionInfo(Convert.ToInt32(ddl_Language.SelectedValue));
             }
         }

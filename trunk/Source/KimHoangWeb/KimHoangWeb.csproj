@@ -89,7 +89,7 @@
     <Content Include="AdminCP\Pages\AddEditNewsManagement.aspx" />
     <Content Include="AdminCP\Pages\CustomerManagement.aspx" />
     <Content Include="AdminCP\Pages\Index.aspx" />
-    <Content Include="AdminCP\Pages\IntroductionManagement.aspx" />
+    <Content Include="AdminCP\Pages\CompanyInfoManagement.aspx" />
     <Content Include="AdminCP\Pages\Login.aspx" />
     <Content Include="AdminCP\Pages\NewsManagement.aspx" />
     <Content Include="AdminCP\Pages\SupportManagement.aspx" />
@@ -809,12 +809,12 @@
     <Compile Include="AdminCP\Pages\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AdminCP\Pages\IntroductionManagement.aspx.cs">
-      <DependentUpon>IntroductionManagement.aspx</DependentUpon>
+    <Compile Include="AdminCP\Pages\CompanyInfoManagement.aspx.cs">
+      <DependentUpon>CompanyInfoManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdminCP\Pages\IntroductionManagement.aspx.designer.cs">
-      <DependentUpon>IntroductionManagement.aspx</DependentUpon>
+    <Compile Include="AdminCP\Pages\CompanyInfoManagement.aspx.designer.cs">
+      <DependentUpon>CompanyInfoManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminCP\Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

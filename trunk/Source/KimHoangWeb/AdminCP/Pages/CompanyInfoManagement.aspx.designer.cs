@@ -10,7 +10,7 @@
 namespace KimHoangWeb.AdminCP.Pages {
     
     
-    public partial class IntroductionManagement {
+    public partial class CompanyInfoManagement {
         
         /// <summary>
         /// ddl_Language control.
@@ -56,5 +56,23 @@ namespace KimHoangWeb.AdminCP.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_Save;
+        
+        /// <summary>
+        /// hdf_Introduction_id control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdf_Introduction_id;
+        
+        /// <summary>
+        /// hdf_Language_Id control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdf_Language_Id;
     }
 }

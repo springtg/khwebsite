@@ -14,7 +14,7 @@ namespace KimHoangDAO
         /// <param name="parentControlID">parentControlID</param>
         ///  <param name="languageID">languageID</param>
         /// <returns>List<CControl></returns>    
-       public IList<CLanguage> GetLanguageList(int languageID)
+       public IList<CLanguage> GetLanguageList()
         {
             IList<CLanguage> list = null;
             try

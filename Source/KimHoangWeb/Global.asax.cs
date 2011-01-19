@@ -24,6 +24,8 @@ namespace KimHoangWeb
             Application["ThangTruoc"] = 0;
             Application["TatCa"] = 0;
             Application["visitors_online"] = 0;
+            Application["LanguageCode"] = "VN";
+            Application["LanguageId"] = 1;
 
         }
 
@@ -33,8 +35,6 @@ namespace KimHoangWeb
             Session.Timeout = 150;
             Session["LoginUserID"] = null;
             Session["LoginUserName"] = "Guest";
-            Session["Language"] = "VN";
-            Session["LanguageId"] = 1;
             Session["LoginOK"] = false;
             //thiet lap dem so luong
             Application.Lock();
@@ -87,13 +87,10 @@ namespace KimHoangWeb
         {
             Session["LoginUserID"] = null;
             Session["LoginUserName"] = string.Empty;
-            Session["Language"] = "VN";
-            Session["LanguageId"] = 1;
             Session["LoginOK"] = false;
-
-            //// Code that runs on application shutdown
-            string path = Server.MapPath("~") + "visitor.txt";
-            File.WriteAllText(path, Application["SLtruycap"].ToString());
+            
+            Application["LanguageCode"] = "VN";
+            Application["LanguageId"] = 1;
         }
     }
 }

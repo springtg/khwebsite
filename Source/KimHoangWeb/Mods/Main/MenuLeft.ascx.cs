@@ -17,7 +17,7 @@ namespace KimHoangWeb.Mods.Main
         private void LoadMenu()
         {
             LeftMenuUI ui = new LeftMenuUI();
-            ltrMenuLeft.Text = ui.GetHTMLCat(129);
+            ltrMenuLeft.Text = ui.GetHTMLCat(Convert.ToInt32(Application["LanguageId"]));
         }
     }
 }

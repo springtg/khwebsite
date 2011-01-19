@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminCP/Master/Admin.Master" AutoEventWireup="true"
-    CodeBehind="IntroductionManagement.aspx.cs" Inherits="KimHoangWeb.AdminCP.Pages.IntroductionManagement" %>
+    CodeBehind="CompanyInfoManagement.aspx.cs" Inherits="KimHoangWeb.AdminCP.Pages.IntroductionManagement" %>
 
 <%@ Register Assembly="FredCK.FCKeditorV2" Namespace="FredCK.FCKeditorV2" TagPrefix="FCKeditorV2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -24,13 +24,17 @@
                 BasePath="../Scripts/fckeditor/" SkinPath="skins/office2003/">
             </FCKeditorV2:FCKeditor>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
-                SelectCommand="USP_ADMIN_SEL_INTRODUCTION_INFO" SelectCommandType="StoredProcedure">
+                SelectCommand="USP_ADMIN_SEL_INTRODUCTION_INFO" SelectCommandType="StoredProcedure"
+                
+                >
                 <SelectParameters>
                     <asp:ControlParameter Name="Language_Id" ControlID="ddl_Language" Type="Int32" DefaultValue="1" />
                 </SelectParameters>
             </asp:SqlDataSource>
             <div>
-            <asp:Button ID="btn_Save" runat="server" Text="Lưu" />
+            <asp:Button ID="btn_Save" runat="server" Text="Lưu" onclick="btn_Save_Click" />
+                <asp:HiddenField ID="hdf_Introduction_id" runat="server" />
+                <asp:HiddenField ID="hdf_Language_Id" runat="server" />
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI.HtmlControls;
 using System.Web.UI;
+using System.Configuration;
 
 namespace KimHoangWeb
 {
@@ -117,6 +118,20 @@ namespace KimHoangWeb
                 Lst_Language_Object = _lang.GetLanguageList();
             }
         }
+
+        public static string GetValueFromConfig(string arg_SufixName, string arg_Language_Code)
+        {
+            string rs = string.Empty;
+            rs = ConfigurationManager.AppSettings[arg_SufixName + arg_Language_Code];
+            return rs;
+        }
+
+        //public static string GetValueFromConfig(string arg_SufixName)
+        //{
+        //    string rs = string.Empty;
+        //    rs = ConfigurationManager.AppSettings[arg_SufixName + s.Get("LanguageCode").ToString()];
+        //    return rs;
+        //}
 
 
     }

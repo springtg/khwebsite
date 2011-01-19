@@ -741,7 +741,6 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Styles\Site.css" />
-    <Content Include="visitor.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -907,6 +906,7 @@
     <Compile Include="Mods\Main\Address.ascx.designer.cs">
       <DependentUpon>Address.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Mods\Main\Class\LeftMenuUI.cs" />
     <Compile Include="Mods\Main\Class\TopMenuUI.cs" />
     <Compile Include="Mods\Main\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>

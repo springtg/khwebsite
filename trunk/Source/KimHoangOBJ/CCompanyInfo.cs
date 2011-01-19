@@ -1,7 +1,7 @@
 ﻿
 namespace KimHoangOBJ
 {
-    public class CIntroductionInfo
+    public class CCompanyInfo
     {
         public int Id { get; set; }
         public int Language_Id { get; set; }

@@ -14,7 +14,7 @@ namespace KimHoangWeb.AdminCP.Pages
             if (!IsPostBack)
             {
                 SetLanguageToDropDownList(ref ddl_Language);
-                LoadIntroductionInfo(Convert.ToInt32(ddl_Language.SelectedValue));
+                //LoadIntroductionInfo(Convert.ToInt32(ddl_Language.SelectedValue));
             }
         }
 
@@ -34,6 +34,13 @@ namespace KimHoangWeb.AdminCP.Pages
         protected void btn_Save_Click(object sender, EventArgs e)
         {
             
+        }
+
+        protected void ddl_Language_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DropDownList l_DropDownList = (DropDownList)sender;
+            if (l_DropDownList.SelectedIndex == -1) return;
+            LoadIntroductionInfo(Convert.ToInt32(l_DropDownList.SelectedValue));
         }
     }
 }

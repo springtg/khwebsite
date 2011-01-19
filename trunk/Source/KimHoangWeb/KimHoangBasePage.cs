@@ -105,6 +105,7 @@ namespace KimHoangWeb
             arg_DropDownList.DataSource = Lst_Language_Object;
             arg_DropDownList.DataTextField="Language_Name";
             arg_DropDownList.DataValueField = "Id";
+            arg_DropDownList.DataBind();
             arg_DropDownList.SelectedIndex = 1;
         }
 

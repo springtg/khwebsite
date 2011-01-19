@@ -13,14 +13,15 @@
         </div>
         <div>
             Ngôn Ngữ:
-            <asp:DropDownList ID="ddl_Language" runat="server" AutoPostBack="True">
+            <asp:DropDownList ID="ddl_Language" runat="server" AutoPostBack="True"
+                onselectedindexchanged="ddl_Language_SelectedIndexChanged" >
             </asp:DropDownList>
             <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
                 SelectCommand="USP_ADMIN_SEL_LANGUAGE" SelectCommandType="StoredProcedure"></asp:SqlDataSource>--%>
         </div>
         <div>
             <FCKeditorV2:FCKeditor ID="FCKeditor1" Width="100%" Height="280px" runat="server"
-                BasePath="../Scripts/fckeditor/" SkinPath="skins/office2003/">
+                BasePath="../Scripts/fckeditor/" SkinPath="skins/office2003/" ToolbarStartExpanded="false" >
             </FCKeditorV2:FCKeditor>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KimHoangConnection %>"
                 SelectCommand="USP_ADMIN_SEL_INTRODUCTION_INFO" SelectCommandType="StoredProcedure"

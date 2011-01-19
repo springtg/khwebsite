@@ -3,13 +3,14 @@
 
 <%@ Register Assembly="KimHoangWeb" Namespace="KimHoangWeb.AdminCP.Controls" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Kim Hoang :: <%=KimHoangWeb.KimHoangBasePage.GetValueFromConfig("NewsManagement_Title_") %>
+    <title>Kim Hoang ::
+        <%=KimHoangWeb.KimHoangBasePage.GetValueFromConfig("NewsManagement_Title" , Application["LanguageCode"])%>
     </title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content_inner">
         <h2>
-            <%=ConfigurationManager.AppSettings["NewsManagement_Title_" + Application["LanguageCode"]]%></h2>
+            <%=KimHoangWeb.KimHoangBasePage.GetValueFromConfig("NewsManagement_Title" , Application["LanguageCode"])%></h2>
         <div class="clear">
         </div>
     </div>

@@ -74,7 +74,7 @@ namespace KimHoangWeb
         //void Page_Error(object sender, EventArgs e)
         //{
         //    Response.Redirect(Error_Page);
-            
+
         //}
 
         protected Control KH_FindControl(ControlCollection arg_CtrlPage, string arg_CtrlName)
@@ -104,7 +104,7 @@ namespace KimHoangWeb
                 InitLanguage();
             }
             arg_DropDownList.DataSource = Lst_Language_Object;
-            arg_DropDownList.DataTextField="Language_Name";
+            arg_DropDownList.DataTextField = "Language_Name";
             arg_DropDownList.DataValueField = "Id";
             arg_DropDownList.DataBind();
             arg_DropDownList.SelectedIndex = 1;
@@ -117,22 +117,16 @@ namespace KimHoangWeb
                 KimHoangDAO.CLanguageDAO _lang = new KimHoangDAO.CLanguageDAO();
                 Lst_Language_Object = _lang.GetLanguageList();
             }
+
         }
 
-        public static string GetValueFromConfig(string arg_SufixName, string arg_Language_Code)
+        public static string GetValueFromConfig(string arg_SufixName, object arg_Language_Code)
         {
             string rs = string.Empty;
-            rs = ConfigurationManager.AppSettings[arg_SufixName + arg_Language_Code];
+            rs = ConfigurationManager.AppSettings[string.Format("{0}_{1}", arg_SufixName, arg_Language_Code)];
             return rs;
         }
 
-        //public static string GetValueFromConfig(string arg_SufixName)
-        //{
-        //    string rs = string.Empty;
-        //    rs = ConfigurationManager.AppSettings[arg_SufixName + s.Get("LanguageCode").ToString()];
-        //    return rs;
-        //}
-
-
     }
+
 }

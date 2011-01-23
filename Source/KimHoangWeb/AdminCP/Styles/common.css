@@ -81,6 +81,7 @@
 .textarea_large,.textbox_large{width:450px;}
 .textarea_full,.textbox_full{width:98%;}
 .textbox_auto{width:auto;}
+.textarea_auto{width:auto;}
 .textbox, .textbox_smallest, .textbox_small, .textbox_medium, .textbox_large, .textbox_full {background: url(../graphics/bg_input.gif) repeat-x;}
 .select_smallest {width: 40px;}
 .select_small {width: 150px;}

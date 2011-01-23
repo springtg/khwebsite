@@ -45,6 +45,7 @@
     <Compile Include="CCompanyInfo.cs" />
     <Compile Include="CSubCat.cs" />
     <Compile Include="CSupport.cs" />
+    <Compile Include="CUser.cs" />
     <Compile Include="CVisitorCount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

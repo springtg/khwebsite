@@ -731,6 +731,7 @@
     <Content Include="Mods\Main\ucFlash.ascx" />
     <Content Include="Mods\Main\ucLinkSite.ascx" />
     <Content Include="Mods\Main\ucNavigate.ascx" />
+    <Content Include="Mods\Main\ucNewsList.ascx" />
     <Content Include="Mods\Main\ucOnline.ascx" />
     <Content Include="Mods\Main\ucRate.ascx" />
     <Content Include="Mods\Main\ucSupport.ascx" />
@@ -956,6 +957,13 @@
     </Compile>
     <Compile Include="Mods\Main\ucNavigate.ascx.designer.cs">
       <DependentUpon>ucNavigate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Mods\Main\ucNewsList.ascx.cs">
+      <DependentUpon>ucNewsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mods\Main\ucNewsList.ascx.designer.cs">
+      <DependentUpon>ucNewsList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Mods\Main\ucOnline.ascx.cs">
       <DependentUpon>ucOnline.ascx</DependentUpon>

@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using KimHoangOBJ;
+using KimHoangDAO;
 
 namespace KimHoangWeb.AdminCP.Pages
 {
@@ -15,7 +13,9 @@ namespace KimHoangWeb.AdminCP.Pages
             if (!IsPostBack)
             {
                 SetLanguageToDropDownList(ref ddl_Language);
-                //LoadIntroductionInfo(Convert.ToInt32(ddl_Language.SelectedValue));
+                ResetForm();
+                LoadIntroductionInfo(Convert.ToInt32(ddl_Language.SelectedValue));
+                
             }
         }
 
@@ -24,7 +24,7 @@ namespace KimHoangWeb.AdminCP.Pages
         {
             KimHoangDAO.CCompanyInfoDAO info = new KimHoangDAO.CCompanyInfoDAO();
             IList<KimHoangOBJ.CCompanyInfo> list = info.GetCompanyInfo(arg_Language_Id);
-            if (list != null)
+            if (list .Count > 0)
             {
                 hdf_Introduction_id.Value = Convert.ToString(list[0].Id);
                 hdf_Language_Id.Value = Convert.ToString(list[0].Language_Id);
@@ -40,13 +40,17 @@ namespace KimHoangWeb.AdminCP.Pages
                 txt_Tel1.Text = list[0].Tel1;
                 txt_Tel2.Text = list[0].Tel2;
             }
+            else
+            {
+                hdf_Introduction_id.Value = "0";
+            }
         }
 
         private CCompanyInfo GetIntroductionInfo()
         {
             CCompanyInfo rs = new CCompanyInfo();
             rs.Id = Convert.ToInt32(hdf_Introduction_id.Value);
-            rs.Language_Id = Convert.ToInt32(hdf_Language_Id.Value);
+            rs.Language_Id = Convert.ToInt32(ddl_Language.SelectedValue);
             rs.Introduction_Info = txt_IntroductionInfo.Value;
             rs.Address = txt_Address.Text;
             rs.Address1 = txt_Address1.Text;
@@ -63,13 +67,40 @@ namespace KimHoangWeb.AdminCP.Pages
 
         protected void btn_Save_Click(object sender, EventArgs e)
         {
+            CCompanyInfo _CompanyInfo = GetIntroductionInfo();
+            CCompanyInfoDAO _CompanyInfoDAO = new CCompanyInfoDAO();
+            if (_CompanyInfo.Id.ToString().Equals("0"))
+            {
+                _CompanyInfoDAO.UpdateCompanyInfo(_CompanyInfo, Session[Session_LoginUserName].ToString());
+            }
+            else
+            {
+                _CompanyInfoDAO.InsertCompanyInfo(_CompanyInfo, Session[Session_LoginUserName].ToString());
+            }
+        }
 
+        private void ResetForm()
+        {
+            hdf_Introduction_id.Value = "0";
+            hdf_Language_Id.Value = Convert.ToString(ddl_Language.SelectedValue);
+            txt_IntroductionInfo.Value = string.Empty;
+            txt_Address.Text = string.Empty;
+            txt_Address1.Text = string.Empty;
+            txt_Address2.Text = string.Empty;
+            txt_CompanyName.Text = string.Empty;
+            txt_Email.Text = string.Empty;
+            txt_Email1.Text = string.Empty;
+            txt_Email2.Text = string.Empty;
+            txt_Tel.Text = string.Empty;
+            txt_Tel1.Text = string.Empty;
+            txt_Tel2.Text = string.Empty;
         }
 
         protected void ddl_Language_SelectedIndexChanged(object sender, EventArgs e)
         {
             DropDownList l_DropDownList = (DropDownList)sender;
             if (l_DropDownList.SelectedIndex == -1) return;
+            ResetForm();
             LoadIntroductionInfo(Convert.ToInt32(l_DropDownList.SelectedValue));
         }
     }
